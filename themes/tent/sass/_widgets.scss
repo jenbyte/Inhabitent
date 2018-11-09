@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+  margin: 0 0 $base__space-unit;
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
+
+/* Sidebar */
+.contact-meta {
+  font-family: 'Merriweather';
+
+  a {
+    text-decoration: none;
+    color: #248a83;
+  }
+}
+.widget-title ul {
+  list-style: none;
+}
