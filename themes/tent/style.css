@@ -247,9 +247,9 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url("../fonts/Merriweather.eot");
-  src: url("../fonts/Merriweather.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather.woff2") format("woff2"), url("../fonts/Merriweather.woff") format("woff"), url("../fonts/Merriweather.ttf") format("truetype"), url("../fonts/Merriweather.svg#Merriweather-Light") format("svg");
+  font-family: 'Merriweather-Light';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
@@ -276,20 +276,28 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: Merriweather;
+  font-family: "Merriweather";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -309,16 +317,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -539,6 +552,11 @@ a {
   text-align: right;
   width: 50%; }
 
+#primary-menu a {
+  color: #248a83; }
+  #primary-menu a:hover {
+    color: #2f1339; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -611,14 +629,17 @@ a {
   display: none; }
 
 /* Sidebar */
-.contact-meta {
-  font-family: 'Merriweather'; }
-  .contact-meta a {
+.widget-title {
+  font-family: "Novecento"; }
+  .widget-title ul li a {
+    color: #248a83;
     text-decoration: none;
-    color: #248a83; }
+    font-family: "Merriweather"; }
 
-.widget-title ul {
-  list-style: none; }
+.contact-meta a {
+  color: #248a83;
+  text-decoration: none;
+  font-family: "Merriweather"; }
 
 /*--------------------------------------------------------------
 # Content
@@ -723,3 +744,81 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Jounal Entry Blog */
+.entry-title {
+  font-family: "Novecento";
+  position: relative; }
+  .entry-title a {
+    background-color: #248a83;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem; }
+  .entry-title:hover {
+    color: #f0e4d1; }
+
+.entry-header a {
+  position: absolute; }
+
+.entry-meta {
+  background-color: #248a83;
+  color: white;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase; }
+
+.comments-link {
+  color: white;
+  text-decoration: none; }
+
+.tags-links {
+  color: #248a83;
+  background-color: #fff; }
+
+#colophon {
+  background: url("../images/dark-wood@2x.png"); }
+  #colophon .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0; }
+  .footer-block-item h3 {
+    color: #d99054;
+    text-transform: uppercase;
+    font-family: "Novecento"; }
+  .footer-block-item p {
+    color: #fff;
+    font-family: "Merriweather"; }
+
+.text-logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50%; }
+
+.copyright {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Novecento";
+  text-align: center;
+  padding: 1.5rem 0; }
