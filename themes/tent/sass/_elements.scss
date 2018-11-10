@@ -71,3 +71,8 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+
+a {
+  @include link();
+  list-style: none;
+}

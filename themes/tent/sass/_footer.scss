@@ -1,34 +1,42 @@
 #colophon {
-  background: url('../images/dark-wood@2x.png');
-  .container {
-    display: flex;
-  }
+  background: url('../../images/dark-wood.png');
 }
 .site-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 3rem 0;
+  max-width: 1120px;
+  margin: auto;
 }
 
 .footer-block-item {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
   h3 {
-    color: $footer__color;
+    color: $footer__header;
     text-transform: uppercase;
     font-family: $font__header;
   }
   p {
     color: #fff;
     font-family: $font__main;
+    margin-bottom: 0;
   }
-}
-
-.text-logo {
-  align-self: flex-end;
-  width: 50%;
+  &:last-child {
+    width: 50%;
+    display: flex;
+    align-self: flex-start;
+    align-content: flex-end;
+  }
+  .text-logo {
+    // align-self: flex-start;
+    // align-items: flex-end;
+    img {
+      max-width: 50%;
+    }
+  }
 }
 
 .copyright {
@@ -37,4 +45,9 @@
   font-family: $font__header;
   text-align: center;
   padding: 1.5rem 0;
+}
+span {
+  padding-right: 1rem;
+  width: 15px;
+  height: auto;
 }
