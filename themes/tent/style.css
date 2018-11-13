@@ -290,6 +290,10 @@ h5,
 h6 {
   clear: both; }
 
+h1,
+h2 {
+  line-height: 1.25; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -403,11 +407,15 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-a {
+*a {
   color: #248a83;
   text-decoration: none;
   font-family: "Merriweather-Light";
   list-style: none; }
+  *a ul {
+    list-style: none; }
+  *a:hover {
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -483,7 +491,7 @@ textarea {
 a {
   color: #248a83; }
   a:visited {
-    color: green; }
+    color: #2f1339; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -496,7 +504,9 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 5; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -637,15 +647,29 @@ a {
 /* Sidebar */
 .widget-title {
   font-family: "novecento"; }
-  .widget-title ul li a {
+  .widget-title a {
     color: #248a83;
     text-decoration: none;
     font-family: "Merriweather-Light"; }
+    .widget-title a ul {
+      list-style: none; }
+    .widget-title a:hover {
+      color: #2f1339; }
+
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+  ul li {
+    list-style: none; }
 
 .contact-meta a {
   color: #248a83;
   text-decoration: none;
   font-family: "Merriweather-Light"; }
+  .contact-meta a ul {
+    list-style: none; }
+  .contact-meta a:hover {
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Content
@@ -754,24 +778,28 @@ object {
   position: relative;
   line-height: 0; }
 
-.entry-title {
+h2 .entry-title,
+.comments-link {
   font-family: "novecento";
   text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  font-size: 2.1rem;
-  max-width: 75%;
   color: #fff;
   background-color: #248a83;
   margin-top: 2.25rem; }
-  .entry-title a {
+  h2 .entry-title a,
+  .comments-link a {
     background-color: #248a83;
     color: #fff;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
     font-family: "novecento"; }
-  .entry-title:hover {
-    color: #f0e4d1; }
+    h2 .entry-title a:hover,
+    .comments-link a:hover {
+      color: #f0e4d1; }
+
+h2 .entry-title {
+  max-width: 75%;
+  font-size: 2.1rem;
+  position: absolute;
+  top: 0; }
 
 .entry-meta {
   background-color: #248a83;
@@ -782,13 +810,9 @@ object {
   bottom: 0;
   right: 0; }
 
-.comments-link {
-  color: #fff;
-  text-decoration: none; }
-
-.tags-links {
-  color: #248a83;
-  background-color: #fff; }
+/* 404 */
+.search-field {
+  background: #eee; }
 
 #colophon {
   background: url("../../images/dark-wood.png"); }
@@ -828,15 +852,13 @@ object {
     font-family: "Merriweather-Light";
     margin-bottom: 0; }
   .footer-block-item:last-child {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    -ms-flex-line-pack: end;
-        align-content: flex-end; }
-  .footer-block-item .text-logo img {
+    height: auto; }
+
+.text-logo {
+  margin-left: 0; }
+  .text-logo img {
     max-width: 50%; }
 
 .copyright {

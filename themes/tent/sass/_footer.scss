@@ -25,17 +25,16 @@
     margin-bottom: 0;
   }
   &:last-child {
-    width: 50%;
-    display: flex;
     align-self: flex-start;
-    align-content: flex-end;
+    height: auto;
   }
-  .text-logo {
-    // align-self: flex-start;
-    // align-items: flex-end;
-    img {
-      max-width: 50%;
-    }
+}
+
+.text-logo {
+  // display: flex;
+  margin-left: 0;
+  img {
+    max-width: 50%;
   }
 }
 

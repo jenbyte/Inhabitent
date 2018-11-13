@@ -72,7 +72,7 @@ table {
   width: 100%;
 }
 
-a {
+*a {
   @include link();
   list-style: none;
 }

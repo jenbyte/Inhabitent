@@ -19,12 +19,19 @@
 /* Sidebar */
 .widget-title {
   font-family: $font__header;
-  ul li {
-    a {
-      @include link();
-    }
+  a {
+    @include link();
   }
 }
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
 .contact-meta {
   a {
     @include link();
