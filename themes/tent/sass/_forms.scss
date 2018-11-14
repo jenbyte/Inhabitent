@@ -36,6 +36,35 @@ input[type='submit'] {
   }
 }
 
+.black-btn {
+  border: 1px solid #000;
+  color: #000;
+  font-family: $font__header;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  width: auto;
+
+  &:hover {
+    background: $color__link;
+    border: 1px solid #248a83;
+    color: $font-light;
+  }
+}
+
+.brand-btn {
+  background: #248a83;
+  color: $font-light;
+  font-family: $font__header;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  &:hover {
+    background: $color__link-hover;
+    color: $font-light;
+  }
+}
+
 /* Fields */
 
 input[type='text'],

@@ -545,6 +545,30 @@ input[type='submit'] {
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
+.black-btn {
+  border: 1px solid #000;
+  color: #000;
+  font-family: "novecento";
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  width: auto; }
+  .black-btn:hover {
+    background: #248a83;
+    border: 1px solid #248a83;
+    color: #fff; }
+
+.brand-btn {
+  background: #248a83;
+  color: #fff;
+  font-family: "novecento";
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase; }
+  .brand-btn:hover {
+    background: #2f1339;
+    color: #fff; }
+
 /* Fields */
 input[type='text'],
 input[type='email'],
@@ -596,11 +620,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 5; }
   .main-navigation ul {
@@ -657,19 +680,17 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
 
-#primary-menu a {
+.menu li a {
   color: #248a83; }
-  #primary-menu a:hover {
+  .menu li a:hover {
     color: #2f1339; }
 
 /*--------------------------------------------------------------
@@ -882,8 +903,154 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-/* Jounal Entry Blog */
+/* About page */
+.content-about {
+  max-width: 1120px;
+  margin: auto; }
+  .content-about .entry-content {
+    margin: auto;
+    padding: 3rem 0; }
+    .content-about .entry-content h2,
+    .content-about .entry-content h3 {
+      color: #2f1339;
+      font-size: 2rem; }
+  .content-about .page-template-about .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .content-about .entry-title {
+    background: none;
+    font-family: "novecento-bold";
+    font-size: 2rem; }
+
+/*------------------------------------
+# Front Page
+--------------------------------------*/
+.menu-item-home a {
+  color: #fff; }
+
+.home-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%; }
+
+.logo {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.site-header {
+  position: relative; }
+
+.front-title {
+  font-family: "novecento";
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.front-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.front-journal-title a {
+  color: #248a83;
+  font-family: "novecento-bold";
+  font-size: 1.3rem;
+  text-transform: uppercase; }
+  .front-journal-title a:hover {
+    color: #2f1339; }
+
+.front-meta {
+  font-size: 0.75rem; }
+
+.journal-entry {
+  border: 1px solid #e1e1e1;
+  max-width: 32%; }
+
+.post-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.75rem; }
+
+.post-thumbnail img {
+  height: auto; }
+
+.front-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.frontpage-term {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 23%;
+  padding: 0.6rem;
+  text-align: center; }
+  .frontpage-term:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054; }
+  .frontpage-term:visited {
+    color: #fff; }
+  .frontpage-term img {
+    width: 70px;
+    height: 70px; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto; }
+
+/*------------------------------------
+# Jounal Entry Blog
+--------------------------------------*/
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
@@ -942,7 +1109,9 @@ object {
   margin: auto;
   width: 1120px; }
 
-/* 404 */
+/*--------------------------------------
+# 404
+----------------------------------------*/
 .search-field {
   background: #eee; }
 

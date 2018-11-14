@@ -1,10 +1,134 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* About page */
+.content-about {
+  max-width: 1120px;
+  margin: auto;
+  .entry-content {
+    margin: auto;
+    padding: 3rem 0;
+    h2,
+    h3 {
+      color: #2f1339;
+      font-size: 2rem;
+    }
+  }
+  .page-template-about .entry-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .entry-title {
+    background: none;
+    font-family: $font__header-bold;
+    font-size: 2rem;
+  }
+}
+/*------------------------------------
+# Front Page
+--------------------------------------*/
+.menu-item-home a {
+  color: $font-light;
+  // border-bottom: none;
+}
 
-/* Front page */
+// Header
+.home-header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/home-hero.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.logo {
+  align-self: center;
+}
+.site-header {
+  position: relative;
+}
+// Frontpage Journal
+.front-title {
+  font-family: $font__header;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-/* Jounal Entry Blog */
+.front-journal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-journal-title a {
+  color: $color__link;
+  font-family: $font__header-bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  &:hover {
+    color: $color__link-hover;
+  }
+}
+.front-meta {
+  font-size: 0.75rem;
+}
+.journal-entry {
+  border: $border;
+  max-width: 32%;
+}
+.post-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.75rem;
+}
+.post-thumbnail {
+  // border-bottom: 5px solid #e1e1e1;
+  // max-height: 250px;
+  img {
+    height: auto;
+  }
+}
+
+// Frontpage SHOP
+.front-shop {
+  display: flex;
+  justify-content: space-between;
+}
+.frontpage-term {
+  border: $border;
+  border-top: 5px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 23%;
+  padding: 0.6rem;
+  text-align: center;
+  &:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054;
+  }
+  &:visited {
+    color: #fff;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+.site-content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/*------------------------------------
+# Jounal Entry Blog
+--------------------------------------*/
 .content-area {
   border-right: $border;
   padding-right: 5%;
@@ -75,7 +199,9 @@
 // .site-main {
 // }
 
-/* 404 */
+/*--------------------------------------
+# 404
+----------------------------------------*/
 .search-field {
   background: $color__background-pre;
 }

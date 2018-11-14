@@ -30,9 +30,9 @@ a {
   border-bottom: $border;
   clear: both;
   display: flex;
-  float: left;
+  // float: left;
   justify-content: flex-end;
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 5;
 
@@ -126,26 +126,19 @@ a {
   }
 
   .nav-previous {
-    float: left;
+    // float: left;
     width: 50%;
   }
 
   .nav-next {
-    float: right;
     text-align: right;
     width: 50%;
   }
 }
 
-#primary-menu a {
+.menu li a {
   color: $color__link;
-
   &:hover {
     color: $color__link-hover;
   }
 }
-
-// .site-header {
-//   margin: auto;
-//   width: 100%;
-// }
