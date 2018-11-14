@@ -1,3 +1,22 @@
+/*--------------------------------------------------------------
+# Entry-Footer
+--------------------------------------------------------------*/
+.cat-links {
+  margin-right: 1.5rem;
+}
+.cat-links,
+.tags-links {
+  text-transform: uppercase;
+  font-family: $font__header;
+  a {
+    text-transform: uppercase;
+    font-family: $font__header;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 #colophon {
   background: url('../../images/dark-wood.png');
 }

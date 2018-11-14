@@ -7,7 +7,7 @@
 /* Jounal Entry Blog */
 .content-area {
   border-right: $border;
-  margin-right: 5%;
+  padding-right: 5%;
   width: 73%;
 }
 .content-area,
@@ -18,16 +18,15 @@
 .comments-link {
   a {
     color: $font-light;
-  }
-  &:hover {
-    color: $hover-light;
+    &:hover {
+      color: $hover-light;
+    }
   }
 }
 
 .entry-header {
   line-height: 0;
-  margin-right: 5%;
-  margin-top: 2.25rem;
+  // margin-top: 2.25rem;
   position: relative;
 }
 
