@@ -255,15 +255,15 @@ th {
 
 @font-face {
   font-family: 'novecento';
-  src: url("novecento.eot");
-  src: url("novecento.eot?#iefix") format("embedded-opentype"), url("novecento.woff2") format("woff2"), url("novecento.woff") format("woff"), url("novecento.ttf") format("truetype"), url("novecento.svg#.") format("svg");
+  src: url("../../fonts/novecento.eot");
+  src: url("../../fonts/novecento.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento.woff2") format("woff2"), url("../../fonts/novecento.woff") format("woff"), url("../../fonts/novecento.ttf") format("truetype"), url("../../fonts/novecento.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'novecento-bold';
-  src: url("novecento-bold.eot");
-  src: url("novecento-bold.eot?#iefix") format("embedded-opentype"), url("novecento-bold.woff2") format("woff2"), url("novecento-bold.woff") format("woff"), url("novecento-bold.ttf") format("truetype"), url("novecento-bold.svg#.") format("svg");
+  src: url("../../fonts/novecento-bold.eot");
+  src: url("../../fonts/novecento-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento-bold.woff2") format("woff2"), url("../../fonts/novecento-bold.woff") format("woff"), url("../../fonts/novecento-bold.ttf") format("truetype"), url("../../fonts/novecento-bold.svg#.") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -775,31 +775,32 @@ object {
 /* Front page */
 /* Jounal Entry Blog */
 .entry-header {
-  position: relative;
-  line-height: 0; }
+  line-height: 0;
+  margin-top: 2.25rem;
+  position: relative; }
 
-h2 .entry-title,
-.comments-link {
-  font-family: "novecento";
-  text-transform: uppercase;
-  color: #fff;
+.entry-title {
   background-color: #248a83;
-  margin-top: 2.25rem; }
-  h2 .entry-title a,
-  .comments-link a {
-    background-color: #248a83;
+  color: #fff;
+  font-family: "novecento";
+  font-size: 2.1rem;
+  max-width: 75%;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0; }
+  .entry-title a {
     color: #fff;
-    text-decoration: none;
-    font-family: "novecento"; }
-    h2 .entry-title a:hover,
-    .comments-link a:hover {
+    font-family: "novecento";
+    text-decoration: none; }
+    .entry-title a:hover {
       color: #f0e4d1; }
 
-h2 .entry-title {
-  max-width: 75%;
-  font-size: 2.1rem;
-  position: absolute;
-  top: 0; }
+.comments-link a {
+  color: #fff; }
+
+.comments-link:hover {
+  color: #f0e4d1; }
 
 .entry-meta {
   background-color: #248a83;
@@ -809,6 +810,17 @@ h2 .entry-title {
   position: absolute;
   bottom: 0;
   right: 0; }
+
+/* Products */
+.single-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.entry-content {
+  color: #404040; }
+  .entry-content .price {
+    font-family: "novecento"; }
 
 /* 404 */
 .search-field {
