@@ -4,9 +4,6 @@
 
 .widget {
   margin: 0 0 $base__space-unit;
-  .day-of-week {
-    font-weight: 700;
-  }
   /* Make sure select elements fit in widgets. */
   select {
     max-width: 100%;
@@ -46,6 +43,6 @@ ul {
 }
 
 .widget-area {
-  width: 27%;
-  margin-right: 5%;
+  width: 27vw;
+  margin-left: 5%;
 }

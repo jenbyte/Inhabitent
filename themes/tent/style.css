@@ -288,7 +288,8 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both; }
+  clear: both;
+  letter-spacing: 2px; }
 
 h1,
 h2 {
@@ -418,6 +419,79 @@ table {
   *a:hover {
     color: #2f1339; }
 
+#colophon {
+  background: url("../../images/dark-wood.png"); }
+
+.site-footer {
+  width: 1120px; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+  max-width: 1120px;
+  margin: auto; }
+
+.footer-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 25%; }
+  .footer-block-item a:hover {
+    text-decoration: underline; }
+  .footer-block-item i {
+    margin-right: 0.5rem; }
+  .footer-block-item p {
+    color: #fff;
+    font-family: "Merriweather-Light";
+    margin-bottom: 0; }
+    .footer-block-item p a {
+      color: #fff;
+      font-family: "Merriweather-Light"; }
+  .footer-block-item:last-child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 0;
+    width: 50%; }
+  .footer-block-item span .days-of-week {
+    font-weight: 500; }
+  .footer-block-item .text-logo {
+    max-width: 50%; }
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: "novecento-bold"; }
+
+.copyright {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "novecento";
+  text-align: center;
+  padding: 1.5rem 0; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -502,11 +576,17 @@ a {
 
 /* Menus */
 .main-navigation {
+  border-bottom: 1px solid #e1e1e1;
   clear: both;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
-  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: relative;
+  width: 100%;
   z-index: 5; }
   .main-navigation ul {
     display: none;
@@ -537,10 +617,10 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
-
-.site-header {
-  border-bottom: 1px solid #e1e1e1; }
+    font-family: "novecento";
+    padding-left: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 /* Small menu. */
 .menu-toggle,
@@ -641,8 +721,6 @@ a {
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
-  .widget .day-of-week {
-    font-weight: 700; }
   .widget select {
     max-width: 100%; }
 
@@ -685,8 +763,8 @@ ul {
     width: 20px; }
 
 .widget-area {
-  width: 27%;
-  margin-right: 5%; }
+  width: 27vw;
+  margin-left: 5%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -794,7 +872,7 @@ object {
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
-  width: 73%; }
+  width: 73vw; }
 
 .content-area,
 .widget-area {
@@ -838,40 +916,6 @@ object {
       color: #f0e4d1; }
 
 .site-content {
-  width: 1120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.site-main {
-  width: 75%; }
-
-.widget-area {
-  width: 25%; }
-
-/* Products */
-.entry-content {
-  color: #404040; }
-  .entry-content .price {
-    font-family: "novecento"; }
-
-.single-product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-/* 404 */
-.search-field {
-  background: #eee; }
-
-#colophon {
-  background: url("../../images/dark-wood.png"); }
-
-.site-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,61 +923,48 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 1120px; }
+
+/* 404 */
+.search-field {
+  background: #eee; }
+
+/* Products */
+.entry-content {
+  color: #404040; }
+
+.product-type-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 3rem 0;
-  max-width: 1120px;
-  margin: auto; }
+  width: 1120px; }
 
-.footer-block-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  width: 25%; }
-  .footer-block-item a:hover {
-    text-decoration: underline; }
-  .footer-block-item i {
-    margin-right: 0.5rem; }
-  .footer-block-item p {
-    color: #fff;
-    font-family: "Merriweather-Light";
-    margin-bottom: 0; }
-    .footer-block-item p a {
-      color: #fff;
-      font-family: "Merriweather-Light"; }
-  .footer-block-item:last-child {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-right: 0;
-    width: 50%; }
-  .footer-block-item span .days-of-week {
-    font-weight: 500; }
-  .footer-block-item .text-logo {
-    max-width: 50%; }
+/* Single */
+.product-image {
+  width: 48%; }
 
-h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.product-wrapper {
+  width: 48%; }
+
+.single-product .entry-content {
+  color: #404040; }
+  .single-product .entry-content p {
+    font-family: "Merriweather-Light"; }
+
+.single-product .product-title {
   color: #d99054;
-  text-transform: uppercase;
-  font-family: "novecento-bold"; }
+  font-family: "novecento-bold";
+  text-transform: uppercase; }
 
-.copyright {
-  text-transform: uppercase;
-  color: #fff;
+.single-product .product-price {
+  color: #404040;
   font-family: "novecento";
-  text-align: center;
-  padding: 1.5rem 0; }
+  font-size: 2rem; }
+
+/* Products Buttons */
+.black-btn {
+  color: green; }

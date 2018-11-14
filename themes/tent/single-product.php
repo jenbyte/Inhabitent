@@ -6,45 +6,45 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+	<header class="entry-header">
+	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
-
+		</header><!-- .entry-header -->
 		<?php while ( have_posts() ) : the_post(); ?>
 		
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div>
+
+<div class="product-type-container">
+	<div class="product-image">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
+	</div>
+	<div class="product-wrapper"> 
+			<?php the_title( '<h1 class="product-title">', '</h1>' ); ?>
+
+		<div class="product-price">
+			<?php echo CFS()->get( 'price' ); ?>
+		</div> <!-- .entry-price -->
+
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+	</div><!-- .product-wrapper -->
 </div>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-	</header><!-- .entry-header -->
-
-	<div class="product-price">
-		<?php echo CFS()->get( 'price' ); ?>
-	</div> <!-- .entry-price -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->
-
-
-			<?php the_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -58,5 +58,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

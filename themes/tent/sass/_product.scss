@@ -1,0 +1,44 @@
+/* Products */
+
+.entry-content {
+  color: $color__text-main;
+}
+
+.product-type-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  width: 1120px;
+}
+
+/* Single */
+.product-image {
+  width: 48%;
+}
+.product-wrapper {
+  width: 48%;
+}
+
+.single-product {
+  .entry-content {
+    color: $color__text-main;
+    p {
+      font-family: $font__main;
+    }
+  }
+  .product-title {
+    color: $color-header;
+    font-family: $font__header-bold;
+    text-transform: uppercase;
+  }
+  .product-price {
+    color: $color__text-main;
+    font-family: $font__header;
+    font-size: 2rem;
+  }
+}
+
+/* Products Buttons */
+.black-btn {
+  color: green;
+}

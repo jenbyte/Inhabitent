@@ -27,11 +27,13 @@ a {
 /* Menus */
 
 .main-navigation {
+  border-bottom: $border;
   clear: both;
-  display: block;
+  display: flex;
   float: left;
-  width: 100%;
+  justify-content: flex-end;
   position: relative;
+  width: 100%;
   z-index: 5;
 
   ul {
@@ -88,17 +90,16 @@ a {
   }
   a {
     display: block;
+    font-family: $font__header;
+    padding-left: 1.5rem;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
-}
-
-.site-header {
-  border-bottom: $border;
 }
 
 /* Small menu. */

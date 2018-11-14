@@ -8,7 +8,7 @@
 .content-area {
   border-right: $border;
   padding-right: 5%;
-  width: 73%;
+  width: 73vw;
 }
 .content-area,
 .widget-area {
@@ -62,34 +62,12 @@
 }
 
 .site-content {
-  width: 1120px;
   display: flex;
   flex-direction: row;
+  width: 1120px;
 }
 
-.site-main {
-  width: 75%;
-}
-.widget-area {
-  width: 25%;
-}
-
-/* Products */
-
-.entry-content {
-  color: $color__text-main;
-  .price {
-    font-family: $font__header;
-  }
-}
-
-.single-product {
-  display: flex;
-}
-// h1 .entry-title {
-//   color: $footer__header;
-//   font-family: $font__header;
-//   text-transform: uppercase;
+// .site-main {
 // }
 
 /* 404 */
