@@ -1033,7 +1033,7 @@ object {
   .frontpage-term:hover {
     border: 1px solid #d99054;
     border-top: 5px solid #d99054; }
-  .frontpage-term:visited {
+  .frontpage-term:visited a {
     color: #fff; }
   .frontpage-term img {
     width: 70px;
