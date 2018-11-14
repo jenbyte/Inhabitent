@@ -539,6 +539,9 @@ a {
     display: block;
     text-decoration: none; }
 
+.site-header {
+  border-bottom: 1px solid #e1e1e1; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -638,6 +641,8 @@ a {
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
+  .widget .day-of-week {
+    font-weight: 700; }
   .widget select {
     max-width: 100%; }
 
@@ -663,14 +668,25 @@ ul {
   ul li {
     list-style: none; }
 
-.contact-meta a {
-  color: #248a83;
-  text-decoration: none;
-  font-family: "Merriweather-Light"; }
-  .contact-meta a ul {
-    list-style: none; }
-  .contact-meta a:hover {
-    color: #2f1339; }
+.contact-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contact-meta a {
+    color: #248a83;
+    text-decoration: none;
+    font-family: "Merriweather-Light"; }
+    .contact-meta a ul {
+      list-style: none; }
+    .contact-meta a:hover {
+      color: #2f1339; }
+  .contact-meta i {
+    margin-right: 0.5rem;
+    width: 20px; }
+
+.widget-area {
+  width: 27%;
+  margin-right: 5%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -776,9 +792,13 @@ object {
 /* Front page */
 /* Jounal Entry Blog */
 .content-area {
-  padding-right: 5%;
   border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
   width: 73%; }
+
+.content-area,
+.widget-area {
+  padding: 3rem 0; }
 
 .comments-link a {
   color: #fff; }
@@ -816,6 +836,16 @@ object {
     text-decoration: none; }
     .entry-title a:hover {
       color: #f0e4d1; }
+
+.site-content {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .site-main {
   width: 75%; }

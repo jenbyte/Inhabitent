@@ -6,9 +6,13 @@
 
 /* Jounal Entry Blog */
 .content-area {
-  padding-right: 5%;
   border-right: $border;
+  padding-right: 5%;
   width: 73%;
+}
+.content-area,
+.widget-area {
+  padding: 3rem 0;
 }
 
 .comments-link {
@@ -57,10 +61,11 @@
   }
 }
 
-// .site-content {
-//   display: flex;
-//   flex-direction: row;
-// }
+.site-content {
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
+}
 
 .site-main {
   width: 75%;
