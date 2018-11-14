@@ -5,10 +5,35 @@
 /* Front page */
 
 /* Jounal Entry Blog */
+.content-area {
+  padding-right: 5%;
+  border-right: $border;
+  width: 73%;
+}
+
+.comments-link {
+  a {
+    color: $font-light;
+  }
+  &:hover {
+    color: $hover-light;
+  }
+}
+
 .entry-header {
   line-height: 0;
   margin-top: 2.25rem;
   position: relative;
+}
+
+.entry-meta {
+  background-color: $color__link;
+  color: $font-light;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .entry-title {
@@ -32,25 +57,27 @@
   }
 }
 
-.comments-link {
-  a {
-    color: $font-light;
-  }
-  &:hover {
-    color: $hover-light;
-  }
+// .site-content {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.site-main {
+  width: 75%;
 }
-.entry-meta {
-  background-color: $color__link;
-  color: $font-light;
-  text-transform: uppercase;
-  padding: 1rem 1.5rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.widget-area {
+  width: 25%;
 }
 
 /* Products */
+
+.entry-content {
+  color: $color__text-main;
+  .price {
+    font-family: $font__header;
+  }
+}
+
 .single-product {
   display: flex;
 }
@@ -59,13 +86,6 @@
 //   font-family: $font__header;
 //   text-transform: uppercase;
 // }
-
-.entry-content {
-  color: $color__text-main;
-  .price {
-    font-family: $font__header;
-  }
-}
 
 /* 404 */
 .search-field {

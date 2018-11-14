@@ -3,6 +3,7 @@
 $base__space-unit: 1.5rem;
 
 // Colors
+$border: 1px solid #e1e1e1;
 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -14,6 +15,7 @@ $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
+$color-header: #d99054;
 $font-light: #fff;
 
 $color__link: #248a83;
@@ -21,11 +23,10 @@ $color__link-visited: #2f1339;
 $color__link-hover: #2f1339;
 $hover-light: #f0e4d1;
 
-$footer__header: #d99054;
-
 // Typography
 
 $font__header: 'novecento';
+$font__header-bold: 'novecento-bold';
 $font__main: 'Merriweather-Light';
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Courier 10 Pitch', Courier, monospace;
