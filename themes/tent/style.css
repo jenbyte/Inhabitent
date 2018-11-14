@@ -422,9 +422,6 @@ table {
 #colophon {
   background: url("../../images/dark-wood.png"); }
 
-.site-footer {
-  width: 1120px; }
-
 .site-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,8 +760,7 @@ ul {
     width: 20px; }
 
 .widget-area {
-  width: 27vw;
-  margin-left: 5%; }
+  width: 27%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -871,8 +867,8 @@ object {
 /* Jounal Entry Blog */
 .content-area {
   border-right: 1px solid #e1e1e1;
-  padding-right: 5%;
-  width: 73vw; }
+  margin-right: 5%;
+  width: 73%; }
 
 .content-area,
 .widget-area {
@@ -886,6 +882,7 @@ object {
 
 .entry-header {
   line-height: 0;
+  margin-right: 5%;
   margin-top: 2.25rem;
   position: relative; }
 
@@ -915,6 +912,9 @@ object {
     .entry-title a:hover {
       color: #f0e4d1; }
 
+.hentry {
+  padding-right: 5%; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,6 +923,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: auto;
   width: 1120px; }
 
 /* 404 */
@@ -958,13 +959,10 @@ object {
 .single-product .product-title {
   color: #d99054;
   font-family: "novecento-bold";
+  margin-top: 0;
   text-transform: uppercase; }
 
 .single-product .product-price {
   color: #404040;
   font-family: "novecento";
   font-size: 2rem; }
-
-/* Products Buttons */
-.black-btn {
-  color: green; }
