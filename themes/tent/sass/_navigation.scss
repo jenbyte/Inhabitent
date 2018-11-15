@@ -27,15 +27,19 @@ a {
 /* Menus */
 
 .main-navigation {
+  background-color: hsla(0, 0%, 100%, 0.85);
   border-bottom: $border;
   clear: both;
   display: flex;
   // float: left;
-  justify-content: flex-end;
-  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  // position: fixed;
   width: 100%;
   z-index: 5;
-
+  a {
+    color: $font-light;
+  }
   ul {
     display: none;
     list-style: none;
@@ -102,6 +106,19 @@ a {
   }
 }
 
+.reverse-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232;
+  .menu li a {
+    color: $font-light;
+    &:hover {
+      color: $hover-light;
+    }
+  }
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -141,4 +158,18 @@ a {
   &:hover {
     color: $color__link-hover;
   }
+}
+
+.frontpage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-item-home a {
+  color: $font-light;
+}
+
+.tent-logo {
+  width: 50px;
 }

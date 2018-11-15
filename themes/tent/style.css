@@ -351,7 +351,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-top: 0; }
 
 *,
 *:before,
@@ -549,10 +550,8 @@ input[type='submit'] {
   border: 1px solid #000;
   color: #000;
   font-family: "novecento";
-  margin: 1.5rem 0;
   padding: 0.75rem 1.5rem;
-  text-transform: uppercase;
-  width: auto; }
+  text-transform: uppercase; }
   .black-btn:hover {
     background: #248a83;
     border: 1px solid #248a83;
@@ -562,7 +561,6 @@ input[type='submit'] {
   background: #248a83;
   color: #fff;
   font-family: "novecento";
-  margin: 1.5rem 0;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase; }
   .brand-btn:hover {
@@ -615,17 +613,22 @@ a {
 
 /* Menus */
 .main-navigation {
+  background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   z-index: 5; }
+  .main-navigation a {
+    color: #fff; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -660,6 +663,16 @@ a {
     text-decoration: none;
     text-transform: uppercase; }
 
+.reverse-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232; }
+  .reverse-header .menu li a {
+    color: #fff; }
+    .reverse-header .menu li a:hover {
+      color: #f0e4d1; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -692,6 +705,24 @@ a {
   color: #248a83; }
   .menu li a:hover {
     color: #2f1339; }
+
+.frontpage-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+
+.menu-item-home a {
+  color: #fff; }
+
+.tent-logo {
+  width: 50px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -833,6 +864,9 @@ ul {
 .archive .format-aside .entry-title {
   display: none; }
 
+.days-of-week {
+  font-weight: 700; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -904,36 +938,49 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
-.content-about {
-  max-width: 1120px;
-  margin: auto; }
-  .content-about .entry-content {
-    margin: auto;
-    padding: 3rem 0; }
-    .content-about .entry-content h2,
-    .content-about .entry-content h3 {
-      color: #2f1339;
-      font-size: 2rem; }
-  .content-about .page-template-about .entry-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .content-about .entry-title {
-    background: none;
-    font-family: "novecento-bold";
+.entry-content {
+  margin: auto;
+  padding: 3rem 0; }
+  .entry-content h2,
+  .entry-content h3 {
+    color: #2f1339;
     font-size: 2rem; }
+
+.page-template-about .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.type-page .entry-title {
+  background: transparent;
+  color: #404040;
+  font-family: "novecento-bold";
+  font-size: 2.4rem;
+  margin-top: 0; }
 
 /*------------------------------------
 # Front Page
 --------------------------------------*/
+.front-content-area {
+  padding-bottom: 3rem; }
+
+.front-title {
+  font-family: "novecento";
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  text-transform: uppercase; }
+
 .menu-item-home a {
-  color: #fff; }
+  color: #fff;
+  border-bottom: none; }
 
 .home-header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg");
@@ -955,12 +1002,6 @@ object {
 .site-header {
   position: relative; }
 
-.front-title {
-  font-family: "novecento";
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase; }
-
 .front-journal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,13 +1010,17 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.front-journal-title a {
-  color: #248a83;
-  font-family: "novecento-bold";
-  font-size: 1.3rem;
+.front-journal-title {
+  line-height: 1.25;
+  padding-bottom: 1rem;
   text-transform: uppercase; }
-  .front-journal-title a:hover {
+  .front-journal-title:hover {
     color: #2f1339; }
+  .front-journal-title a {
+    color: #248a83;
+    font-family: "novecento-bold";
+    font-size: 1.3rem;
+    letter-spacing: 2px; }
 
 .front-meta {
   font-size: 0.75rem; }
@@ -992,16 +1037,21 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0.75rem; }
 
-.post-thumbnail img {
-  height: auto; }
+.post-thumbnail {
+  border-bottom: 5px solid #e1e1e1;
+  max-height: 230px;
+  overflow: hidden;
+  position: bottom; }
+  .post-thumbnail img {
+    height: auto; }
 
 .front-shop {
   display: -webkit-box;
@@ -1033,11 +1083,13 @@ object {
   .frontpage-term:hover {
     border: 1px solid #d99054;
     border-top: 5px solid #d99054; }
-  .frontpage-term:visited a {
+  .frontpage-term a:visited {
     color: #fff; }
   .frontpage-term img {
     width: 70px;
     height: 70px; }
+  .frontpage-term p {
+    margin-bottom: 1rem; }
 
 .site-content {
   display: -webkit-box;

@@ -2,35 +2,52 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
-.content-about {
-  max-width: 1120px;
+.entry-content {
   margin: auto;
-  .entry-content {
-    margin: auto;
-    padding: 3rem 0;
-    h2,
-    h3 {
-      color: #2f1339;
-      font-size: 2rem;
-    }
+  padding: 3rem 0;
+  h1 {
   }
-  .page-template-about .entry-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .entry-title {
-    background: none;
-    font-family: $font__header-bold;
+  h2,
+  h3 {
+    color: #2f1339;
     font-size: 2rem;
   }
 }
+
+.page-template-about .entry-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.type-page {
+  .entry-title {
+    background: transparent;
+    color: $color__text-main;
+    font-family: $font__header-bold;
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+}
+
 /*------------------------------------
 # Front Page
 --------------------------------------*/
-.menu-item-home a {
-  color: $font-light;
-  // border-bottom: none;
+.front-content-area {
+  padding-bottom: 3rem;
+}
+.front-title {
+  font-family: $font__header;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-item-home {
+  a {
+    color: $font-light;
+    border-bottom: none;
+  }
 }
 
 // Header
@@ -50,25 +67,23 @@
   position: relative;
 }
 // Frontpage Journal
-.front-title {
-  font-family: $font__header;
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .front-journal {
   display: flex;
   justify-content: space-between;
 }
 
-.front-journal-title a {
-  color: $color__link;
-  font-family: $font__header-bold;
-  font-size: 1.3rem;
+.front-journal-title {
+  line-height: 1.25;
+  padding-bottom: 1rem;
   text-transform: uppercase;
   &:hover {
     color: $color__link-hover;
+  }
+  a {
+    color: $color__link;
+    font-family: $font__header-bold;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
   }
 }
 .front-meta {
@@ -81,13 +96,17 @@
 .post-entry {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  // max-height: 300px;
+  // overflow: hidden;
   padding: 0.75rem;
 }
 .post-thumbnail {
-  // border-bottom: 5px solid #e1e1e1;
-  // max-height: 250px;
+  border-bottom: 5px solid #e1e1e1;
+  max-height: 230px;
+  overflow: hidden;
+  position: bottom;
   img {
     height: auto;
   }
@@ -112,12 +131,15 @@
     border: 1px solid #d99054;
     border-top: 5px solid #d99054;
   }
-  &:visited a {
+  a:visited {
     color: #fff;
   }
   img {
     width: 70px;
     height: 70px;
+  }
+  p {
+    margin-bottom: 1rem;
   }
 }
 .site-content {
