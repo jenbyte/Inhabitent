@@ -6,39 +6,54 @@
  */
 
 get_header(); ?>
-	<header class="entry-header">
+<header class="entry-header">
 	<div id="primary" class="product-area">
 		<main id="main" class="site-main" role="main">
-		</header><!-- .entry-header -->
-		<?php while ( have_posts() ) : the_post(); ?>
+</header><!-- .entry-header -->
 		
+<?php while ( have_posts() ) : the_post(); ?>
+		
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="product-type-container">
+		<div class="product-image">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'large' ); ?>
+			<?php endif; ?>
+		</div>
+		<div class="product-wrapper"> 
+				<?php the_title( '<h1 class="product-title">', '</h1>' ); ?>
 
-<div class="product-type-container">
-	<div class="product-image">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+			<div class="product-price">
+				<?php $price = CFS()->get( 'price' );  ?>
+				<?= "$$price"; ?>
+			
+			</div> <!-- .entry-price -->
+
+			<div class="entry-content">
+
+				<?php the_content(); ?>
+
+				<section class="social-buttons">
+					<a class="black-btn" href="<?php ''; ?>">
+						<i class="fab fa-facebook-f">  </i> Like</a>
+
+					<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
+						<i class="fab fa-twitter"> </i>  Tweet</a>
+
+					<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
+						<i class="fab fa-pinterest">  </i>  Pin</a>
+				</section>
+
+				<?php
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+						'after'  => '</div>',
+					) );
+				?>
+			</div><!-- .entry-content -->
+		</div><!-- .product-wrapper -->
 	</div>
-	<div class="product-wrapper"> 
-			<?php the_title( '<h1 class="product-title">', '</h1>' ); ?>
-
-		<div class="product-price">
-			<?php echo CFS()->get( 'price' ); ?>
-		</div> <!-- .entry-price -->
-
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-					'after'  => '</div>',
-				) );
-			?>
-		</div><!-- .entry-content -->
-	</div><!-- .product-wrapper -->
-</div>
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>

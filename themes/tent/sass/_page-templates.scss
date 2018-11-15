@@ -2,24 +2,27 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
-.entry-content {
-  margin: auto;
-  padding: 3rem 0;
-  h1 {
-  }
-  h2,
-  h3 {
-    color: #2f1339;
-    font-size: 2rem;
-  }
-}
-
 .page-template-about .entry-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+
+  .entry-title {
+    color: $font-light;
+  }
 }
-.type-page {
+.entry-content {
+  margin: auto;
+  padding: 3rem 0;
+  h2,
+  h3 {
+    color: $color-content;
+    font-size: 2rem;
+  }
+}
+
+.entry-header {
   .entry-title {
     background: transparent;
     color: $color__text-main;
@@ -58,7 +61,7 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 .logo {
   align-self: center;
@@ -153,17 +156,19 @@
 --------------------------------------*/
 .content-area {
   border-right: $border;
-  padding-right: 5%;
+
   width: 73%;
 }
 .content-area,
 .widget-area {
   padding: 3rem 0;
+  padding-right: 5%;
 }
 
 .comments-link {
   a {
     color: $font-light;
+    font-family: $font__header;
     &:hover {
       color: $hover-light;
     }
@@ -174,16 +179,20 @@
   line-height: 0;
   // margin-top: 2.25rem;
   position: relative;
+  img {
+    width: 100%;
+  }
 }
 
 .entry-meta {
   background-color: $color__link;
   color: $font-light;
-  text-transform: uppercase;
+  font-family: $font__header;
   padding: 1rem 1.5rem;
   position: absolute;
   bottom: 0;
   right: 0;
+  text-transform: uppercase;
 }
 
 .entry-title {

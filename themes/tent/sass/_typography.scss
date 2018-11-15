@@ -22,13 +22,14 @@ h4,
 h5,
 h6 {
   clear: both;
+  font-family: $font__header-bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h1,
 h2 {
   line-height: 1.25;
-  text-transform: uppercase;
 }
 
 /* Copy */

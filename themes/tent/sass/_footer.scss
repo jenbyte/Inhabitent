@@ -41,6 +41,14 @@
   a:hover {
     text-decoration: underline;
   }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    color: $color-header;
+    text-transform: uppercase;
+    font-family: $font__header-bold;
+  }
+
   i {
     margin-right: 0.5rem;
   }
@@ -59,20 +67,9 @@
     padding-right: 0;
     width: 50%;
   }
-  span .days-of-week {
-    font-weight: 500;
-  }
   .text-logo {
     max-width: 50%;
   }
-}
-
-h3 {
-  display: flex;
-  flex-direction: column;
-  color: $color-header;
-  text-transform: uppercase;
-  font-family: $font__header-bold;
 }
 
 .copyright {

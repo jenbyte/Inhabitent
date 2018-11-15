@@ -2,6 +2,8 @@
 
 .entry-content {
   color: $color__text-main;
+  font-family: $font__main;
+  font-size: 1rem;
 }
 
 .product-type-container {
@@ -24,17 +26,20 @@
     color: $color__text-main;
     p {
       font-family: $font__main;
+      margin-top: 0;
     }
   }
   .product-title {
     color: $color-header;
     font-family: $font__header-bold;
-    margin-top: 0;
+    margin: 0;
     text-transform: uppercase;
   }
   .product-price {
     color: $color__text-main;
     font-family: $font__header;
     font-size: 2rem;
+    line-height: 1;
+    margin-top: 1rem;
   }
 }
