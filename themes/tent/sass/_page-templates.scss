@@ -2,19 +2,30 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* About page */
-.page-template-about .entry-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+.content-about {
+  width: 100%;
+  .entry-content {
+    max-width: 800px;
+  }
+  .entry-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+  }
 
   .entry-title {
+    background: transparent;
     color: $font-light;
+    font-family: $font__header-bold;
+    font-size: 3rem;
   }
 }
+
 .entry-content {
   margin: auto;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   h2,
   h3 {
     color: $color-content;
@@ -22,15 +33,15 @@
   }
 }
 
-.entry-header {
-  .entry-title {
-    background: transparent;
-    color: $color__text-main;
-    font-family: $font__header-bold;
-    font-size: 2.4rem;
-    margin-top: 0;
-  }
-}
+// .entry-header {
+//   .entry-title {
+//     background: transparent;
+//     color: $color__text-main;
+//     font-family: $font__header-bold;
+//     font-size: 2.4rem;
+//     margin-top: 0;
+//   }
+// }
 
 /*------------------------------------
 # Front Page
@@ -214,10 +225,6 @@
       color: $hover-light;
     }
   }
-}
-
-.hentry {
-  padding-right: 5%;
 }
 
 .site-content {
