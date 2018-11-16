@@ -15,7 +15,12 @@
   display: none;
 }
 .search-submit {
-  padding: 0;
+  padding: 0 0.25rem;
+  &:hover {
+    background: transparent;
+    border: none;
+    color: $color__link;
+  }
 }
 /* Sidebar */
 .widget-title {

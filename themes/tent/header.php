@@ -31,7 +31,21 @@
 				</div><!-- .site-branding -->
 
 				<section class="frontpage-header">
-						<?php if(!is_page_template( 'front-page.php' || 'about.php')) : ?>
+						<?php if(is_page_template( 'about.php' ) || is_front_page() ) : ?>
+
+							<nav id="site-navigation" class="main-navigation reverse-header" role="navigation">
+								<a href="<?php echo get_bloginfo( 'url' ); ?>">
+									<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
+									class="tent-logo" alt="Inhabitent tent logo" />
+								</a>
+								<div class="top-menu">
+									<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button> 
+									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>					
+									<?php get_search_form(); ?>
+								</div>	
+							</nav><!-- #site-navigation -->
+
+						<?php else : ?>
 
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								
@@ -45,6 +59,7 @@
 									<?php get_search_form(); ?>
 								</div>	
 							</nav><!-- #site-navigation -->
+
 
 						<?php endif; ?>
 						

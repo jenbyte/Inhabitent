@@ -71,6 +71,13 @@ input[type='submit'] {
 }
 
 /* Fields */
+.search-field {
+  background: transparent;
+  width: 0;
+}
+.show {
+  width: 100px;
+}
 
 input[type='text'],
 input[type='email'],
@@ -78,7 +85,6 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  background: transparent;
   border: none;
   border-radius: 0;
   color: #666;

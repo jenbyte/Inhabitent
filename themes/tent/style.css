@@ -599,13 +599,19 @@ input[type='submit'] {
   margin: 1.5rem 0; }
 
 /* Fields */
+.search-field {
+  background: transparent;
+  width: 0; }
+
+.show {
+  width: 100px; }
+
 input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  background: transparent;
   border: none;
   border-radius: 0;
   color: #666;
@@ -648,8 +654,15 @@ a {
     outline: 0; }
 
 /* Site-Header */
-.frontpage-header a {
-  color: #fff; }
+.frontpage-header {
+  border-bottom: 1px solid #e1e1e1; }
+  .frontpage-header a {
+    color: #fff;
+    display: block;
+    font-family: "novecento";
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -664,8 +677,10 @@ a {
           justify-content: center; }
 
 /* Menus */
+.icon-search {
+  padding: 0.25rem; }
+
 .main-navigation {
-  border-bottom: 1px solid #e1e1e1;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,12 +723,6 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
-  .main-navigation a {
-    display: block;
-    font-family: "novecento";
-    padding-left: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase; }
 
 .reverse-header {
   background-color: transparent;
@@ -724,6 +733,8 @@ a {
     color: #fff; }
     .reverse-header .menu li a:hover {
       color: #f0e4d1; }
+  .reverse-header span {
+    color: white; }
 
 /* Small menu. */
 .menu-toggle,
@@ -836,7 +847,11 @@ a {
   display: none; }
 
 .search-submit {
-  padding: 0; }
+  padding: 0 0.25rem; }
+  .search-submit:hover {
+    background: transparent;
+    border: none;
+    color: #248a83; }
 
 /* Sidebar */
 .widget-title {
@@ -1066,6 +1081,9 @@ object {
   .entry-content h3 {
     color: #2f1339;
     font-size: 2rem; }
+
+.page-template-about .site-content {
+  width: auto; }
 
 /*------------------------------------
 # Front Page
@@ -1297,15 +1315,20 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding-bottom: 2rem; }
 
 .entry-content {
   color: #404040;
   font-family: "Merriweather-Light";
   font-size: 1rem; }
 
-.product-area .page-title {
-  text-align: center; }
+.product-area {
+  padding: 2rem 0; }
+  .product-area .page-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.75rem;
+    text-align: center; }
 
 .container {
   margin-left: auto;

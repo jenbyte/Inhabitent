@@ -1,11 +1,13 @@
 /* Products */
-
+// .archive .content-area {
+// }
 .archive-links {
   border-bottom: $border-dash;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 .entry-content {
   color: $color__text-main;
@@ -14,7 +16,10 @@
 }
 
 .product-area {
+  padding: 2rem 0;
   .page-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.75rem;
     text-align: center;
   }
 }
