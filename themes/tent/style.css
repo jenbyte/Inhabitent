@@ -948,23 +948,28 @@ object {
   width: 100%; }
   .content-about .entry-content {
     max-width: 800px; }
+  .content-about .entry-title {
+    background: transparent;
+    color: #fff;
+    font-family: "novecento-bold";
+    font-size: 3rem; }
+  .content-about .entry-header .entry-title {
+    background: transparent;
+    color: #fff;
+    font-family: "novecento-bold";
+    font-size: 2.4rem;
+    margin-top: 0; }
   .content-about .entry-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-    width: 100vw; }
-  .content-about .entry-title {
-    background: transparent;
-    color: #fff;
-    font-family: "novecento-bold";
-    font-size: 3rem; }
+            justify-content: center; }
+    .content-about .entry-header h1 {
+      -ms-flex-item-align: center;
+          align-self: center;
+      position: absolute; }
 
 .entry-content {
   margin: auto;
@@ -977,7 +982,25 @@ object {
 /*------------------------------------
 # Front Page
 --------------------------------------*/
+.home .site-content {
+  width: 100%; }
+
+.home .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 1120px; }
+
 .front-content-area {
+  width: 100%;
   padding-bottom: 3rem; }
 
 .front-title {
@@ -1101,15 +1124,6 @@ object {
   .frontpage-term p {
     margin-bottom: 1rem; }
 
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto; }
-
 /*------------------------------------
 # Jounal Entry Blog
 --------------------------------------*/
@@ -1128,11 +1142,42 @@ object {
   .comments-link a:hover {
     color: #f0e4d1; }
 
-.entry-header {
+.blog .entry-content {
+  padding-bottom: 1.5rem; }
+
+.blog .entry-header {
   line-height: 0;
   position: relative; }
-  .entry-header img {
+  .blog .entry-header img {
     width: 100%; }
+
+.blog .entry-title {
+  background-color: #248a83;
+  color: #fff;
+  font-family: "novecento";
+  font-size: 2.1rem;
+  max-width: 75%;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0; }
+  .blog .entry-title a {
+    color: #fff;
+    font-family: "novecento";
+    text-decoration: none; }
+    .blog .entry-title a:hover {
+      color: #f0e4d1; }
+
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  width: 1120px; }
 
 .entry-meta {
   background-color: #248a83;
@@ -1143,34 +1188,6 @@ object {
   bottom: 0;
   right: 0;
   text-transform: uppercase; }
-
-.entry-title {
-  background-color: #248a83;
-  color: #fff;
-  font-family: "novecento";
-  font-size: 2.1rem;
-  max-width: 75%;
-  padding: 0.75rem 1.5rem;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0; }
-  .entry-title a {
-    color: #fff;
-    font-family: "novecento";
-    text-decoration: none; }
-    .entry-title a:hover {
-      color: #f0e4d1; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
-  width: 1120px; }
 
 /*--------------------------------------
 # 404

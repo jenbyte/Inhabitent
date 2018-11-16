@@ -7,22 +7,32 @@
   .entry-content {
     max-width: 800px;
   }
-  .entry-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100vw;
-  }
-
   .entry-title {
     background: transparent;
     color: $font-light;
     font-family: $font__header-bold;
     font-size: 3rem;
   }
+  .entry-header {
+    .entry-title {
+      background: transparent;
+      color: $font-light;
+      font-family: $font__header-bold;
+      font-size: 2.4rem;
+      margin-top: 0;
+    }
+  }
+  .entry-header {
+    display: flex;
+    justify-content: center;
+    // height: auto;
+    // width: 100vw;
+    h1 {
+      align-self: center;
+      position: absolute;
+    }
+  }
 }
-
 .entry-content {
   margin: auto;
   padding-bottom: 3rem;
@@ -33,20 +43,25 @@
   }
 }
 
-// .entry-header {
-//   .entry-title {
-//     background: transparent;
-//     color: $color__text-main;
-//     font-family: $font__header-bold;
-//     font-size: 2.4rem;
-//     margin-top: 0;
-//   }
-// }
-
 /*------------------------------------
 # Front Page
 --------------------------------------*/
+.home {
+  .site-content {
+    width: 100%;
+    // margin: auto;
+  }
+  .site-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 1120px;
+  }
+}
+
 .front-content-area {
+  width: 100%;
   padding-bottom: 3rem;
 }
 .front-title {
@@ -156,11 +171,11 @@
     margin-bottom: 1rem;
   }
 }
-.site-content {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
+// .site-content {
+//   display: flex;
+//   justify-content: center;
+//   margin: auto;
+// }
 
 /*------------------------------------
 # Jounal Entry Blog
@@ -186,12 +201,43 @@
   }
 }
 
-.entry-header {
-  line-height: 0;
-  // margin-top: 2.25rem;
-  position: relative;
-  img {
-    width: 100%;
+.blog {
+  .entry-content {
+    padding-bottom: 1.5rem;
+  }
+  .entry-header {
+    line-height: 0;
+    // margin-top: 2.25rem;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  .entry-title {
+    background-color: $color__link;
+    color: $font-light;
+    font-family: $font__header;
+    font-size: 2.1rem;
+    max-width: 75%;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    a {
+      // background-color: $color__link;
+      color: $font-light;
+      font-family: $font__header;
+      text-decoration: none;
+      &:hover {
+        color: $hover-light;
+      }
+    }
+  }
+  .site-content {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1120px;
   }
 }
 
@@ -205,37 +251,6 @@
   right: 0;
   text-transform: uppercase;
 }
-
-.entry-title {
-  background-color: $color__link;
-  color: $font-light;
-  font-family: $font__header;
-  font-size: 2.1rem;
-  max-width: 75%;
-  padding: 0.75rem 1.5rem;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-  a {
-    // background-color: $color__link;
-    color: $font-light;
-    font-family: $font__header;
-    text-decoration: none;
-    &:hover {
-      color: $hover-light;
-    }
-  }
-}
-
-.site-content {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 1120px;
-}
-
-// .site-main {
-// }
 
 /*--------------------------------------
 # 404
