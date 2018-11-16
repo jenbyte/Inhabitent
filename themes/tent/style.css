@@ -1124,6 +1124,15 @@ object {
   .frontpage-term p {
     margin-bottom: 1rem; }
 
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto; }
+
 /*------------------------------------
 # Jounal Entry Blog
 --------------------------------------*/
@@ -1142,16 +1151,20 @@ object {
   .comments-link a:hover {
     color: #f0e4d1; }
 
-.blog .entry-content {
-  padding-bottom: 1.5rem; }
+.blog .entry-content,
+.post .entry-content {
+  padding-bottom: 0; }
 
-.blog .entry-header {
+.blog .entry-header,
+.post .entry-header {
   line-height: 0;
   position: relative; }
-  .blog .entry-header img {
+  .blog .entry-header img,
+  .post .entry-header img {
     width: 100%; }
 
-.blog .entry-title {
+.blog .entry-title,
+.post .entry-title {
   background-color: #248a83;
   color: #fff;
   font-family: "novecento";
@@ -1161,14 +1174,17 @@ object {
   position: absolute;
   text-transform: uppercase;
   top: 0; }
-  .blog .entry-title a {
+  .blog .entry-title a,
+  .post .entry-title a {
     color: #fff;
     font-family: "novecento";
     text-decoration: none; }
-    .blog .entry-title a:hover {
+    .blog .entry-title a:hover,
+    .post .entry-title a:hover {
       color: #f0e4d1; }
 
-.blog .site-content {
+.blog .site-content,
+.post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

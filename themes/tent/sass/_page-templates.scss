@@ -171,11 +171,11 @@
     margin-bottom: 1rem;
   }
 }
-// .site-content {
-//   display: flex;
-//   justify-content: center;
-//   margin: auto;
-// }
+.site-content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 /*------------------------------------
 # Jounal Entry Blog
@@ -201,9 +201,10 @@
   }
 }
 
-.blog {
+.blog,
+.post {
   .entry-content {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
   }
   .entry-header {
     line-height: 0;
