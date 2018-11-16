@@ -26,45 +26,42 @@ get_header(); ?>
 				'taxonomy' => 'product_type',
 				'hide_empty' => 0, 
 			));
-		
 			foreach($terms as $term): ?>
-					<!-- <p><?php echo $term->description; ?></p> -->
 					<p><a class="product-link" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
 
 			<?php endforeach; ?>
-		</div>
+		</div><!-- .archive-links -->
 
-			<!--  TODO product Grid -->
-			<section class="product-grid">
-				
-					<?php /* Start the Loop */ ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-						<div class="product-grid-item">	
-							<?php
-								get_template_part( 'template-parts/content' );
-							?>
+
+		<!--  TODO product Grid -->
+		<section class="product-grid">
+			
+			<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+				<div class="product-grid-item">	
+						<?php
+							get_template_part( 'template-parts/content' );
+						?>
 					<div class="product-info">
+						<?php $product_name = the_title( '<h2 class="product-title">', '</h2>' ); 
+							echo ucwords( $product_name ); ?>
 
-					<?php $product_name = the_title( '<h2 class="product-title">', '</h2>' ); 
-						echo ucwords( $product_name ); ?>
-
-					<div class="product-price">
-						<?php $price = CFS()->get( 'price' );  ?>
-						<?= "$$price"; ?>
-					</div> <!-- .entry-price -->
+						<div class="product-price">
+							<?php $price = CFS()->get( 'price' );  ?>
+							<?= "$$price"; ?>
+						</div> <!-- .entry-price -->
 
 					</div>	<!-- .product-info-->
+					</div><!-- .product-grid-item-->
 						<?php endwhile; ?>
-
+					
 						<?php else : ?>
 
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-					<?php endif; ?>
-					</div>
+						<?php endif; ?>
+				
 			</section>
-
-
 
 
 

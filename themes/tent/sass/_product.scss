@@ -2,6 +2,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
   width: 1120px;
 }
 .archive-links {
@@ -18,6 +19,7 @@
 }
 
 .product-area {
+  width: 1120px;
   .page-title {
     text-align: center;
   }
@@ -70,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
-  width: 1120px;
+  // width: 1120px;
 }
 
 .taxonomy-description {

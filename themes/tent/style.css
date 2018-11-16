@@ -1267,6 +1267,7 @@ object {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
   width: 1120px; }
 
 .archive-links {
@@ -1287,8 +1288,10 @@ object {
   font-family: "Merriweather-Light";
   font-size: 1rem; }
 
-.product-area .page-title {
-  text-align: center; }
+.product-area {
+  width: 1120px; }
+  .product-area .page-title {
+    text-align: center; }
 
 .product-grid {
   display: grid;
@@ -1331,8 +1334,7 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3rem 0;
-  width: 1120px; }
+  padding: 3rem 0; }
 
 .taxonomy-description {
   display: none; }

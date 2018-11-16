@@ -91,7 +91,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_hero_banner');
 
 
 /*  
- * Modify the Product post type archieve loop 
+ * Modify the Product post type archive loop 
  */
 
 function inhabitent_mod_post_type_archive( $query ){
@@ -105,12 +105,11 @@ function inhabitent_mod_post_type_archive( $query ){
 		$query->set( 'posts_per_page', 16 );
 	}
 }
-
 add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive' );
 
 
 /*  
-* Filter Product archieve title 
+* Filter Product archive title 
 */
 function inhabitent_archive_title( $title ){
 	if( is_post_type_archive( 'product' ) ){
@@ -121,7 +120,6 @@ function inhabitent_archive_title( $title ){
 	}
 	return $title;
 }
-
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
 
 
