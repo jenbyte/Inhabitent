@@ -90,13 +90,44 @@ function inhabitent_hero_banner(){
 add_action('wp_enqueue_scripts', 'inhabitent_hero_banner');
 
 
-/* TODO Filter the Product post type archieve */
+/*  
+ * Modify the Product post type archieve loop 
+ */
+
+function inhabitent_mod_post_type_archive( $query ){
+	if(
+		( is_post_type_archive(array( 'product' )) || $query->is_tax( 'product_type' ) )
+		&& !is_admin()
+		&& $query->is_main_query()
+	){
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+	}
+}
+
+add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive' );
 
 
-/*  Filter [...] in Journal to Read More button */
+/*  
+* Filter Product archieve title 
+*/
+function inhabitent_archive_title( $title ){
+	if( is_post_type_archive( 'product' ) ){
+		$title = 'Shop Stuff';
+	} elseif( is_tax( 'product_type' ) ){
+		$title = sprintf( '%1$s', single_term_title( '', false) );
+		// sprintf (string print format); replacing '%1$s' with a string that comes after it
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
+
+
+/*  Filter exerpt in Journal to Read More button */
 function inhabitent_excerpt_more($more) {
 	global $post;
-	echo '<p>  </p>';
-  return '<a class="black-btn" href="'. get_permalink($post->ID) . '"> Read more →</a>';
+  return '... <p><a class="black-btn" href="'. get_permalink($post->ID) . '"> Read more →</a></p>';
 }
 add_filter('excerpt_more', 'inhabitent_excerpt_more');
