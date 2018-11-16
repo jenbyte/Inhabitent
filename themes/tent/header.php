@@ -33,7 +33,7 @@
 				<section class="frontpage-header">
 						<?php if(is_page_template( 'about.php' ) || is_front_page() ) : ?>
 
-							<nav id="site-navigation" class="main-navigation reverse-header" role="navigation">
+							<nav id="site-navigation" class="reverse-header main-navigation" role="navigation">
 								<a href="<?php echo get_bloginfo( 'url' ); ?>">
 									<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
 									class="tent-logo" alt="Inhabitent tent logo" />

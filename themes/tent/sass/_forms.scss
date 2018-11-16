@@ -72,11 +72,16 @@ input[type='submit'] {
 
 /* Fields */
 .search-field {
-  background: transparent;
+  color: $hover-light;
+  height: 0;
   width: 0;
+  input {
+    background: transparent;
+  }
 }
 .show {
-  width: 100px;
+  height: auto;
+  width: 200px;
 }
 
 input[type='text'],
@@ -93,6 +98,7 @@ textarea {
 
   &:focus {
     color: #111;
+    background: transparent;
   }
 }
 
@@ -102,8 +108,8 @@ input[type='url'],
 input[type='password'] {
   padding: 3px;
 }
-input[type='search'] {
-  padding: 1.5px;
+input[type='search']:focus {
+  color: $hover-light;
 }
 textarea {
   padding-left: 3px;
