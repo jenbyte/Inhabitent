@@ -1,17 +1,54 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-.form-text {
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px;
+}
+.comment-body {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.comment-content a {
+  color: $color__link;
+}
+.comment-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+.comment-metadata {
+  color: grey;
+}
+.form-text,
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
   // display: flex;
   // flex-direction: column;
   font-family: $font__header;
   text-transform: uppercase;
+}
+.comment-form-author,
+.comment-form-email {
+  width: 49%;
+}
+.comment-form-url input,
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%;
 }
 .form {
   background: $color__background-screen;
 }
 .required {
   color: #d99054;
+}
+textarea {
+  width: 100%;
 }
 
 /* Buttons */
@@ -99,9 +136,10 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
+  background: #f4f4f4;
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
 
   &:focus {
     color: #111;

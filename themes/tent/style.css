@@ -509,15 +509,54 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-.form-text {
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5rem; }
+
+.comment-content a {
+  color: #248a83; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+
+.comment-metadata {
+  color: grey; }
+
+.form-text,
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
   font-family: "novecento";
   text-transform: uppercase; }
+
+.comment-form-author,
+.comment-form-email {
+  width: 49%; }
+
+.comment-form-url input,
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%; }
 
 .form {
   background: #f1f1f1; }
 
 .required {
   color: #d99054; }
+
+textarea {
+  width: 100%; }
 
 /* Buttons */
 button,
@@ -584,9 +623,10 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
+  background: #f4f4f4;
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 0; }
   input[type='text']:focus,
   input[type='email']:focus,
   input[type='url']:focus,
@@ -613,7 +653,7 @@ textarea {
 a {
   color: #248a83; }
   a:visited {
-    color: #2f1339; }
+    color: none; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -875,10 +915,60 @@ ul {
 
 /* Comments */
 .comment-content a {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  color: #248a83; }
 
 .bypostauthor {
   display: block; }
+
+.comments-title,
+.comment-reply-title {
+  color: #2f1339;
+  font-size: 2rem;
+  padding-top: 2rem; }
+
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+  .comment-body:last-child {
+    border-bottom: 1px solid #e1e1e1; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0;
+  border-top: none; }
+  .comment-list li {
+    border-top: 1px solid #e1e1e1; }
+
+.comment-metadata {
+  color: grey; }
+
+.form-text,
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  font-family: "novecento";
+  text-transform: uppercase; }
+
+.comment-form-author,
+.comment-form-email {
+  width: 49%; }
+
+.comment-form-url input,
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1212,10 +1302,51 @@ object {
   background: #eee; }
 
 /* Products */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.archive-links {
+  border-bottom: 1px dashed #c8c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem; }
+
 .entry-content {
   color: #404040;
   font-family: "Merriweather-Light";
   font-size: 1rem; }
+
+.product-area .page-title {
+  text-align: center; }
+
+.product-grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr); }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1; }
+  .product-grid-item .thumbnail-wrapper {
+    background-color: #e1e1e1;
+    overflow: hidden; }
+
+.product-link {
+  color: #248a83;
+  font-family: "novecento";
+  font-size: 1.2rem;
+  margin: 0 1.5rem;
+  text-transform: uppercase; }
+  .product-link:hover {
+    color: #2f1339; }
 
 .product-type-container {
   display: -webkit-box;
@@ -1226,6 +1357,9 @@ object {
           justify-content: space-between;
   padding: 3rem 0;
   width: 1120px; }
+
+.taxonomy-description {
+  display: none; }
 
 /* Single */
 .product-image {
@@ -1251,4 +1385,4 @@ object {
   font-family: "novecento";
   font-size: 2rem;
   line-height: 1;
-  margin-top: 1rem; }
+  margin: 1rem 0; }

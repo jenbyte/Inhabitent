@@ -21,9 +21,6 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content' ); ?>
-				<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
-					Read More →
-				</a>
 			<?php endwhile; ?>
 				<?php the_posts_navigation(); ?>
 

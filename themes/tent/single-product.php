@@ -21,13 +21,12 @@ get_header(); ?>
 				<?php the_post_thumbnail( 'large' ); ?>
 			<?php endif; ?>
 		</div>
-		<div class="product-wrapper"> 
+			<div class="product-wrapper"> 
 				<?php the_title( '<h1 class="product-title">', '</h1>' ); ?>
 
 			<div class="product-price">
 				<?php $price = CFS()->get( 'price' );  ?>
 				<?= "$$price"; ?>
-			
 			</div> <!-- .entry-price -->
 
 			<div class="entry-content">

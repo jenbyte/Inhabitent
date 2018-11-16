@@ -46,9 +46,9 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
 function my_login_logo_url_title() {
 	return 'Inhabitent';
 	//mouse hover over logo will show 'Inhabitent'
-
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
 
 /* Custom Hero Image for the About Page */
 
@@ -90,6 +90,13 @@ function inhabitent_hero_banner(){
 add_action('wp_enqueue_scripts', 'inhabitent_hero_banner');
 
 
+/* TODO Filter the Product post type archieve */
 
 
-/* Filter the Product post type archieve */
+/*  Filter [...] in Journal to Read More button */
+function inhabitent_excerpt_more($more) {
+	global $post;
+	echo '<p>  </p>';
+  return '<a class="black-btn" href="'. get_permalink($post->ID) . '"> Read more →</a>';
+}
+add_filter('excerpt_more', 'inhabitent_excerpt_more');

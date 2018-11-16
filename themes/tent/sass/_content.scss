@@ -45,9 +45,76 @@
 
 /* Comments */
 
+.comment {
+  //   border-bottom: $border;
+  //   padding-bottom: 1.5rem;
+}
+
 .comment-content a {
   word-wrap: break-word;
+  color: $color__link;
 }
 .bypostauthor {
   display: block;
+}
+
+.comments-title,
+.comment-reply-title {
+  color: $color-content;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px;
+}
+.comment-body {
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  &:last-child {
+    border-bottom: $border;
+  }
+  //   li {
+  //     border-bottom: none;
+  //   }
+}
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0;
+  border-top: none;
+  li {
+    border-top: $border;
+
+    // &:last-child {
+    //   border-bottom: $border;
+    // }
+  }
+}
+.comment-metadata {
+  color: grey;
+}
+.form-text,
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  // display: flex;
+  // flex-direction: column;
+  font-family: $font__header;
+  text-transform: uppercase;
+}
+.comment-form-author,
+.comment-form-email {
+  width: 49%;
+}
+.comment-form-url input,
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%;
 }

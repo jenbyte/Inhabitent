@@ -17,19 +17,13 @@ get_header(); ?>
 			<!-- <?php the_post_navigation(); ?> -->
 		<section class="social-buttons">
 			<a class="black-btn" href="<?php ''; ?>">
-				<i class="fab fa-facebook-f">  </i> 
-				 Like
-			</a>
+				<i class="fab fa-facebook-f">  </i> Like</a>
 
 			<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
-				<i class="fab fa-twitter"> </i> 
-				 Tweet
-			</a>
+				<i class="fab fa-twitter"> </i>  Tweet</a>
 
 			<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
-				<i class="fab fa-pinterest">  </i> 
-				 Pin
-			</a>
+				<i class="fab fa-pinterest">  </i>  Pin</a>
 		</section>
 
 			<?php
