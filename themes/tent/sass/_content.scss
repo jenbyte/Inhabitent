@@ -39,8 +39,14 @@
   display: none;
 }
 
-.days-of-week {
+span .days-of-week {
   font-weight: 700;
+}
+
+/* Map */
+iframe {
+  height: 300px;
+  width: 100%;
 }
 
 /* Comments */

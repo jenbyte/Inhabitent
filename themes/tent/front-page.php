@@ -39,7 +39,7 @@ get_header(); ?>
 <!-- // Journal Entry -->
 	<?php
 		$args = array(
-		'order' => 'ASC',
+		'order' => 'DSC',
 		'posts_per_page' => 3,
 		'post_type' => 'post',
 		);

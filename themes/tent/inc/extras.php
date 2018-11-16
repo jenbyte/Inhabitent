@@ -129,3 +129,8 @@ function inhabitent_excerpt_more($more) {
   return '... <p><a class="black-btn" href="'. get_permalink($post->ID) . '"> Read more →</a></p>';
 }
 add_filter('excerpt_more', 'inhabitent_excerpt_more');
+
+
+/*  
+* Filter Adventures title 
+*/

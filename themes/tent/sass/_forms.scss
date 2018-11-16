@@ -18,18 +18,6 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  // border: 1px solid;
-  // border-color: #ccc #ccc #bbb;
-  // border-radius: 3px;
-  // background: #e6e6e6;
-  // box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
-  //   inset 0 15px 17px rgba(255, 255, 255, 0.5),
-  //   inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  // color: rgba(0, 0, 0, 0.8);
-  // @include font-size(0.75);
-  // line-height: 1;
-  // padding: 0.6rem 1rem 0.4rem;
-  // text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background: $color__link;
   border: 1px solid #21759b;
   color: $font-light;
@@ -41,12 +29,7 @@ input[type='submit'] {
     background: $button-hover;
     border: 1px solid #19625d;
     color: $font-light;
-    // border-color: #ccc #bbb #aaa;
-    // box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    //   inset 0 15px 17px rgba(255, 255, 255, 0.8),
-    //   inset 0 -5px 12px rgba(0, 0, 0, 0.02);
   }
-
   &:active,
   &:focus {
     border-color: #aaa #bbb #bbb;
@@ -60,10 +43,9 @@ input[type='submit'] {
   color: #000;
   font-family: $font__header;
   font-size: 0.9rem;
-  // margin: 1.5rem 0;
-  margin-bottom: 1.5rem;
+  margin: 3rem 0;
   margin-right: 5px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   text-transform: uppercase;
   &:hover {
     background: $color__link;
@@ -77,7 +59,6 @@ input[type='submit'] {
   color: $font-light;
   font-family: $font__header;
   font-size: 0.9rem;
-  // margin: 1.5rem 0;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   &:hover {
@@ -97,10 +78,12 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  background: #f4f4f4;
-  color: #666;
-  border: 1px solid #ccc;
+  background: transparent;
+  border: none;
   border-radius: 0;
+  color: #666;
+  font-family: $font__header;
+  text-transform: uppercase;
 
   &:focus {
     color: #111;
@@ -110,11 +93,12 @@ textarea {
 input[type='text'],
 input[type='email'],
 input[type='url'],
-input[type='password'],
-input[type='search'] {
+input[type='password'] {
   padding: 3px;
 }
-
+input[type='search'] {
+  padding: 1.5px;
+}
 textarea {
   padding-left: 3px;
   width: 100%;

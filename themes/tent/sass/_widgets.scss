@@ -14,7 +14,9 @@
 .widget_search .search-submit {
   display: none;
 }
-
+.search-submit {
+  padding: 0;
+}
 /* Sidebar */
 .widget-title {
   font-family: $font__header-bold;
