@@ -199,14 +199,6 @@ input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-.top-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 fieldset {
   background: none;
   border: none;
@@ -216,11 +208,6 @@ fieldset {
     background: none;
     border: none;
     color: #248a83; }
-  fieldset input .search-field {
-    content: 'type and hit enter'; }
-
-.icon-search {
-  padding: 0.25rem; }
 
 legend {
   border: 0;
@@ -598,11 +585,39 @@ input[type='submit'] {
 .social-buttons {
   margin: 1.5rem 0; }
 
+.white-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "novecento";
+  font-size: 0.9rem;
+  margin: 3rem 0;
+  margin-right: 5px;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase; }
+  .white-btn:hover {
+    background: #248a83;
+    border: 1px solid #248a83;
+    color: #fff; }
+
 /* Fields */
+.reverse-header input[type='text'],
+.reverse-header input[type='email'],
+.reverse-header input[type='url'],
+.reverse-header input[type='password'],
+.reverse-header input[type='search'],
+.reverse-header textarea {
+  color: #f0e4d1; }
+  .reverse-header input[type='text']:focus,
+  .reverse-header input[type='email']:focus,
+  .reverse-header input[type='url']:focus,
+  .reverse-header input[type='password']:focus,
+  .reverse-header input[type='search']:focus,
+  .reverse-header textarea:focus {
+    color: #f0e4d1;
+    background: transparent; }
+
 .search-field {
-  color: #f0e4d1;
-  height: 0;
-  width: 0; }
+  color: #f0e4d1; }
   .search-field input {
     background: transparent; }
 
@@ -701,6 +716,10 @@ a {
   z-index: 5; }
   .main-navigation a {
     color: #fff; }
+  .main-navigation .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -726,7 +745,6 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
 
 .reverse-header {
@@ -742,13 +760,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  position: absolute;
+  margin: 10px auto;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5; }
-  .reverse-header .icon-search:hover {
-    color: #f0e4d1; }
+  .reverse-header .icon-search {
+    text-shadow: 1px 1px 2px #323232; }
+    .reverse-header .icon-search:hover {
+      color: #f0e4d1; }
   .reverse-header .menu,
   .reverse-header .nav-menu {
     display: -webkit-box;
@@ -766,6 +785,14 @@ a {
         color: #f0e4d1; }
   .reverse-header span {
     color: white; }
+
+.top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1256,6 +1283,28 @@ object {
   margin: auto;
   width: 1120px; }
 
+.story-info {
+  position: absolute; }
+
+.adventures-container {
+  height: 500px;
+  width: 100%; }
+
+.adventure {
+  margin-top: 2rem; }
+
+.adv-thumbnail {
+  position: relative; }
+  .adv-thumbnail img {
+    width: 100%; }
+
+.adv-title a {
+  color: #fff;
+  font-family: "Merriweather-Light";
+  font-size: 2.4rem; }
+  .adv-title a:hover {
+    color: #f0e4d1; }
+
 /*------------------------------------
 # Jounal Entry Blog
 --------------------------------------*/
@@ -1331,9 +1380,6 @@ object {
 /*--------------------------------------
 # 404
 ----------------------------------------*/
-.search-field {
-  background: #eee; }
-
 /* Products */
 .archive-links {
   border-bottom: 1px dashed #c8c8c8;

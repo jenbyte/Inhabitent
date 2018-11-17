@@ -75,6 +75,46 @@ get_header(); ?>
 			</article>
 		<?php endforeach; wp_reset_postdata(); ?>
 	</section>
+
+
+<!-- // Adventures  -->
+	<?php
+		$args = array(
+		'order' => 'ASC',
+		// 'posts_per_page' => 4,
+		'post_type' => 'adventure',
+		);
+		$adventure_posts = get_posts( $args ); 
+	?>
+	<h2 class="front-title">Latest Adventures</h2>
+	<section class="adventures-container">
+		<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+			<article class="adventure">
+				<div class="adv-thumbnail">	
+					<?php 
+						if ( has_post_thumbnail() ) {
+							the_post_thumbnail('large'); 
+						} 
+					?>
+				</div>
+				<div class="story-info">
+					<div class="adv-title">
+						<a href="<?php get_the_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</div>
+					<a class="white-btn" href="<?php echo get_the_permalink(); ?>">
+						read more
+					</a>
+				</div>	
+			</article>
+		<?php endforeach; wp_reset_postdata(); ?>
+		<a class="brand-btn" href="<?php echo get_term_link( $post ); ?>">
+			more adventures
+		</a>
+	</section>s
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

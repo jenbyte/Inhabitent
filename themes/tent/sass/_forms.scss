@@ -70,11 +70,42 @@ input[type='submit'] {
   margin: 1.5rem 0;
 }
 
+.white-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: $font__header;
+  font-size: 0.9rem;
+  margin: 3rem 0;
+  margin-right: 5px;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  &:hover {
+    background: $color__link;
+    border: 1px solid #248a83;
+    color: $font-light;
+  }
+}
+
 /* Fields */
+.reverse-header {
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='search'],
+  textarea {
+    color: #f0e4d1;
+    &:focus {
+      color: #f0e4d1;
+      background: transparent;
+    }
+  }
+}
+
 .search-field {
-  color: $hover-light;
-  height: 0;
-  width: 0;
+  color: #f0e4d1;
+  // height: 0;
+  // width: 0;
   input {
     background: transparent;
   }

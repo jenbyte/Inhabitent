@@ -64,6 +64,9 @@ a {
   a {
     color: $font-light;
   }
+  .nav-menu {
+    display: flex;
+  }
   ul {
     display: none;
     list-style: none;
@@ -109,7 +112,7 @@ a {
     }
   }
   li {
-    float: left;
+    // float: left;
     position: relative;
 
     &:hover > a,
@@ -130,12 +133,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  position: absolute;
+  margin: 10px auto;
+  // position: absolute;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5;
   .icon-search {
+    text-shadow: 1px 1px 2px #323232;
     &:hover {
       color: $hover-light;
     }
@@ -152,10 +156,14 @@ a {
       }
     }
   }
-
   span {
     color: white;
   }
+}
+
+.top-menu {
+  display: flex;
+  align-items: center;
 }
 
 /* Small menu. */

@@ -170,6 +170,7 @@
     margin-bottom: 1rem;
   }
 }
+
 .site-content {
   display: flex;
   justify-content: center;
@@ -177,12 +178,52 @@
   width: 1120px;
 }
 
+// Frontpage Adventures
+.story-info {
+  position: absolute;
+}
+.adventures-container {
+  // display: flex;
+  // justify-content: space-between;
+  height: 500px;
+  width: 100%;
+}
+.adventure {
+  margin-top: 2rem;
+  // &:first-child {
+  //   height: 100%;
+  //   width: 50vw;
+  // }
+  // &:nth-of-type(2) {
+  //   height: 50%;
+  //   width: 50vw;
+  // }
+  // &:nth-of-type(3),
+  // &:last-child {
+  //   height: 50%;
+  //   width: 25vw;
+  // }
+}
+.adv-thumbnail {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+.adv-title a {
+  color: $font-light;
+  font-family: $font__main;
+  font-size: 2.4rem;
+  &:hover {
+    color: $hover-light;
+  }
+}
+
 /*------------------------------------
 # Jounal Entry Blog
 --------------------------------------*/
 .content-area {
   border-right: $border;
-
   width: 73%;
 }
 .content-area,
@@ -256,6 +297,6 @@
 /*--------------------------------------
 # 404
 ----------------------------------------*/
-.search-field {
-  background: $color__background-pre;
-}
+// .search-field {
+//   background: $color__background-pre;
+// }

@@ -185,15 +185,9 @@ input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.top-menu {
-  display: flex;
-  align-items: center;
-}
 fieldset {
   background: none;
   border: none;
-  //   display: flex;
-  //   flex-direction: row-reverse;
   margin: 0 2px;
   padding: 0.35em 0.6em;
   button {
@@ -201,12 +195,6 @@ fieldset {
     border: none;
     color: $color__link;
   }
-  input .search-field {
-    content: 'type and hit enter';
-  }
-}
-.icon-search {
-  padding: 0.25rem;
 }
 legend {
   border: 0;
