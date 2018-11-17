@@ -10,7 +10,7 @@
 
 		<label>
 			<input type="search" class="search-field" placeholder="type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
-			<!-- <span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span> -->
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
 		</label>
 		
 	</fieldset>

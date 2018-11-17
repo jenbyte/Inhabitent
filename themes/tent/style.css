@@ -732,15 +732,38 @@ a {
 .reverse-header {
   background-color: transparent;
   border-bottom: 0;
-  position: absolute;
+  color: #f0e4d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
+  position: absolute;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5; }
-  .reverse-header .menu li a {
-    color: #fff; }
-    .reverse-header .menu li a:hover {
-      color: #f0e4d1; }
+  .reverse-header .icon-search:hover {
+    color: #f0e4d1; }
+  .reverse-header .menu,
+  .reverse-header .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto; }
+    .reverse-header .menu li a,
+    .reverse-header .nav-menu li a {
+      color: #fff; }
+      .reverse-header .menu li a:hover,
+      .reverse-header .nav-menu li a:hover {
+        color: #f0e4d1; }
   .reverse-header span {
     color: white; }
 

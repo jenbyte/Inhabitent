@@ -53,10 +53,8 @@ a {
   padding: 0.25rem;
 }
 .main-navigation {
-  // border-bottom: $border;
   clear: both;
   display: flex;
-  // float: left;
   justify-content: space-between;
   align-items: center;
   // position: fixed;
@@ -128,17 +126,33 @@ a {
 .reverse-header {
   background-color: transparent;
   border-bottom: 0;
-  position: absolute;
+  color: $hover-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
+  position: absolute;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5;
-  .menu li a {
-    color: $font-light;
+  .icon-search {
     &:hover {
       color: $hover-light;
     }
   }
+  .menu,
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    li a {
+      color: $font-light;
+      &:hover {
+        color: $hover-light;
+      }
+    }
+  }
+
   span {
     color: white;
   }
