@@ -94,20 +94,20 @@ input[type='submit'] {
   input[type='password'],
   input[type='search'],
   textarea {
+    border: none;
     color: $font-light;
+    background: transparent;
     &:focus {
       color: $font-light;
       background: transparent;
     }
   }
 }
-input[type='search'] {
-  color: white;
-}
+
 .search-field {
-  // color: #f0e4d1;
-  // height: 0;
-  // width: 0;
+  color: #f0e4d1;
+  height: 0;
+  width: 0;
   input[type='search'] {
     background: transparent;
     border: none;
@@ -133,14 +133,15 @@ textarea {
     background: transparent;
   }
 }
-input[type='email'] {
-  border: $border;
+input[type='search'] {
+  color: white;
 }
 
 input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'] {
+  border: $border;
   padding: 3px;
 }
 

@@ -90,13 +90,13 @@ get_header(); ?>
 		<div class="stories-container">
 			<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
 				<article class="adventure">
-					<div class="adv-thumbnail">	
-						<?php 
-							if ( has_post_thumbnail() ) {
-								the_post_thumbnail('large'); 
-							} 
-						?>
-					</div>
+			
+					<?php 
+						if ( has_post_thumbnail() ) {
+							the_post_thumbnail(''); 
+						} 
+					?>
+
 					<div class="story-info">
 						<div class="adv-title">
 							<a href="<?php get_the_permalink(); ?>">
