@@ -94,16 +94,18 @@ input[type='submit'] {
   input[type='password'],
   input[type='search'],
   textarea {
-    color: #f0e4d1;
+    color: $font-light;
     &:focus {
-      color: #f0e4d1;
+      color: $font-light;
       background: transparent;
     }
   }
 }
-
+input[type='search'] {
+  color: white;
+}
 .search-field {
-  color: #f0e4d1;
+  // color: #f0e4d1;
   // height: 0;
   // width: 0;
   input {
@@ -139,9 +141,7 @@ input[type='url'],
 input[type='password'] {
   padding: 3px;
 }
-input[type='search']:focus {
-  color: $hover-light;
-}
+
 textarea {
   padding-left: 3px;
   width: 100%;

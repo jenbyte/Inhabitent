@@ -74,7 +74,6 @@ function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
-
 	return $stylesheet_uri;
 }
 add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );

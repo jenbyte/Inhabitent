@@ -31,7 +31,7 @@
 				</div><!-- .site-branding -->
 
 				<section class="frontpage-header">
-						<?php if(is_page_template( 'about.php' ) || is_front_page() ) : ?>
+						<?php if(is_page_template( 'about.php' ) || is_front_page() || is_singular( array('adventure' ))  ) : ?>
 
 							<nav id="site-navigation" class="reverse-header" role="navigation">
 								<a href="<?php echo get_bloginfo( 'url' ); ?>">

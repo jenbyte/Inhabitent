@@ -39,13 +39,19 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div class="product-grid-item">	
-						<?php
-							get_template_part( 'template-parts/content' );
-						?>
+					<a href="<?= get_permalink() ; ?>">
+						<div class="thumbnail-wrapper">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php else : ?>
+								<?php echo the_title( '<h2 class="product-title">', '</h2>' ); ?>
+							<?php endif; ?>
+						</div>  <!-- .thumbnail-wrapper -->
+					</a>
 					<div class="product-info">
-						<?php $product_name = the_title( '<h2 class="product-title">', '</h2>' ); 
-							echo ucwords( $product_name ); ?>
 
+						<?php the_title( '<h2 class="product-title">', '</h2>' ); ?>
+						<div class="dots"></div>
 						<div class="product-price">
 							<?php $price = CFS()->get( 'price' );  ?>
 							<?= "$$price"; ?>

@@ -13,39 +13,33 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); 	?>
+				<div class="taxonomy-description">
+					<?=	the_archive_description( ); ?>
+				</div>
+
 			</header><!-- .page-header -->
 
 
-		<div class="archive-links">
-			<?php 
-			$terms = get_terms(array(
-				'taxonomy' => 'product_type',
-				'hide_empty' => 0, 
-			));
-			foreach($terms as $term): ?>
-					<p><a class="product-link" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
-
-			<?php endforeach; ?>
-		</div><!-- .archive-links -->
-
-
 		<!--  TODO product Grid -->
-		
+		<section class="product-grid">
 			
 			<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div class="product-grid-item">	
-						<?php
-							get_template_part( 'template-parts/content' );
-						?>
+					<a href="<?= get_permalink() ; ?>">
+						<div class="thumbnail-wrapper">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php else : ?>
+								<?php echo the_title( '<h2 class="product-title">', '</h2>' ); ?>
+							<?php endif; ?>
+						</div>  <!-- .thumbnail-wrapper -->
+					</a>
 					<div class="product-info">
-						<?php $product_name = the_title( '<h2 class="product-title">', '</h2>' ); 
-							echo ucwords( $product_name ); ?>
 
+						<?php the_title( '<h2 class="product-title">', '</h2>' ); ?>
+						<div class="dots"></div>
 						<div class="product-price">
 							<?php $price = CFS()->get( 'price' );  ?>
 							<?= "$$price"; ?>
@@ -61,7 +55,7 @@ get_header(); ?>
 
 						<?php endif; ?>
 				
-	
+			</section>
 
 
 

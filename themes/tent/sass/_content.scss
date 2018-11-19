@@ -51,7 +51,9 @@ iframe {
 
 /* Comments */
 
-.comment {
+.comment-form textarea,
+.comment-form input {
+  background: #f4f4f4;
   //   border-bottom: $border;
   //   padding-bottom: 1.5rem;
 }
@@ -70,7 +72,11 @@ iframe {
   font-size: 2rem;
   padding-top: 2rem;
 }
-
+.comment-author cite {
+  font-family: $font__main-bold;
+  font-style: normal;
+  text-transform: capitalize;
+}
 .comment-author-avatar {
   border-radius: 50%;
   height: 64px;
