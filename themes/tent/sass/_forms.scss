@@ -108,8 +108,9 @@ input[type='search'] {
   // color: #f0e4d1;
   // height: 0;
   // width: 0;
-  input {
+  input[type='search'] {
     background: transparent;
+    border: none;
   }
 }
 .show {
@@ -123,16 +124,17 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  border: none;
   border-radius: 0;
   color: #666;
   font-family: $font__header;
   text-transform: uppercase;
-
   &:focus {
     color: #111;
     background: transparent;
   }
+}
+input[type='email'] {
+  border: $border;
 }
 
 input[type='text'],

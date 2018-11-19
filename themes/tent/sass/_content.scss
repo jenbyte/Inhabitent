@@ -40,6 +40,7 @@
 }
 
 span .days-of-week {
+  font-family: $font__header-bold;
   font-weight: 700;
 }
 
@@ -52,8 +53,8 @@ iframe {
 /* Comments */
 
 .comment-form textarea,
-.comment-form input {
-  background: #f4f4f4;
+.comment-form input[type='text'] {
+  background: $color__bg-input;
   //   border-bottom: $border;
   //   padding-bottom: 1.5rem;
 }
@@ -102,10 +103,6 @@ iframe {
   border-top: none;
   li {
     border-top: $border;
-
-    // &:last-child {
-    //   border-bottom: $border;
-    // }
   }
 }
 .comment-metadata {
@@ -116,8 +113,6 @@ iframe {
 .comment-form-author,
 .comment-form-email,
 .comment-form-url {
-  // display: flex;
-  // flex-direction: column;
   font-family: $font__header;
   text-transform: uppercase;
 }
@@ -125,8 +120,23 @@ iframe {
 .comment-form-email {
   width: 49%;
 }
+.comment-form-comment textarea,
 .comment-form-url input,
 .comment-form-author input,
 .comment-form-email input {
+  background: $color__bg-input;
+  border: $border;
   width: 100%;
+}
+
+.form-text {
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='search'],
+  textarea {
+    background: $color__bg-input;
+    border: $border;
+  }
 }

@@ -111,7 +111,7 @@ get_header(); ?>
 			<?php endforeach; wp_reset_postdata(); ?>
 		</div><!-- .stories-container  -->
 		
-		<a class="brand-btn" href="<?php echo get_term_link( $post ); ?>">
+		<a class="brand-btn" href="<?php echo get_the_permalink(); ?>">
 			more adventures
 		</a>
 	</section>
