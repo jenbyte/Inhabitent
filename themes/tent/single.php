@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<!-- <?php the_post_navigation(); ?> -->
+<!-- //TODO Link it properly -->
 		<section class="social-buttons">
 			<a class="black-btn" href="<?php ''; ?>">
 				<i class="fab fa-facebook-f">  </i> Like</a>
