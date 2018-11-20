@@ -44,10 +44,6 @@
       font-size: 2rem;
     }
   }
-
-  .site-content {
-    width: auto;
-  }
 }
 /*------------------------------------
 # Archive
@@ -83,9 +79,9 @@
 # Front Page
 --------------------------------------*/
 .home {
-  .site-content {
-    width: 100%;
-  }
+  // .site-content {
+  //   width: 100%;
+  // }
   .site-main {
     display: flex;
     flex-direction: column;
@@ -202,13 +198,6 @@
   p {
     margin-bottom: 1rem;
   }
-}
-
-.site-content {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 1120px;
 }
 
 // Frontpage Adventures
@@ -388,7 +377,9 @@
 .site-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: auto;
+  padding-top: 40px;
   width: 1120px;
 }
 .content-area,

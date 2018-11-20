@@ -28,6 +28,7 @@ a {
 .frontpage-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: $border;
+  // position: fixed;
   a {
     color: $font-light;
     display: block;
@@ -36,6 +37,13 @@ a {
     text-decoration: none;
     text-transform: uppercase;
   }
+}
+.site-header {
+  margin: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .page-template-about,
@@ -47,10 +55,13 @@ a {
   }
   .site-header {
     margin: 1rem 0;
-    // padding-top: 0.75rem;
     position: absolute;
     top: 0;
     width: 100%;
+  }
+  .site-content {
+    padding-top: 0;
+    width: auto;
   }
 }
 
@@ -229,5 +240,7 @@ a {
 }
 
 .tent-logo {
+  display: flex;
+  justify-self: center;
   width: 50px;
 }

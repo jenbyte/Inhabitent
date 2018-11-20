@@ -101,10 +101,27 @@ input[type='submit'] {
       color: $font-light;
       background: transparent;
     }
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $hover-light;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $hover-light;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $hover-light;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $hover-light;
+    }
   }
 }
 
 .search-field {
+  border: 0;
   color: #f0e4d1;
   // height: 0;
   width: 0;
