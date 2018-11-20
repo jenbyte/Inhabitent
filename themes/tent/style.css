@@ -1086,8 +1086,11 @@ iframe {
 .comments-title,
 .comment-reply-title {
   color: #2f1339;
-  font-size: 2rem;
-  padding-top: 2rem; }
+  font-size: 2rem; }
+
+.comments-title {
+  margin-bottom: 1rem;
+  padding-top: 3rem; }
 
 .comment-author cite {
   font-family: "Merriweather-Bold";
@@ -1102,6 +1105,7 @@ iframe {
   width: 64px; }
 
 .comment-body {
+  border-top: 1px solid #e1e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,10 +1116,7 @@ iframe {
   margin-left: 0;
   padding-left: 0;
   border-bottom: 1px solid #e1e1e1; }
-  .comment-list .children {
-    border-top: 1px solid #e1e1e1; }
   .comment-list ul li {
-    border-top: 1px solid #e1e1e1;
     margin-left: 1.5rem; }
 
 .comment-metadata {

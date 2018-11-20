@@ -69,7 +69,10 @@ iframe {
 .comment-reply-title {
   color: $color-content;
   font-size: 2rem;
-  padding-top: 2rem;
+}
+.comments-title {
+  margin-bottom: 1rem;
+  padding-top: 3rem;
 }
 .comment-author cite {
   font-family: $font__main-bold;
@@ -84,26 +87,17 @@ iframe {
   width: 64px;
 }
 .comment-body {
+  border-top: $border;
   display: flex;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  // &:last-child {
-  //   border-bottom: $border;
-  // }
-  //   li {
-  //     border-bottom: none;
-  //   }
 }
 
 .comment-list {
   margin-left: 0;
   padding-left: 0;
   border-bottom: $border;
-  .children {
-    border-top: $border;
-  }
   ul li {
-    border-top: $border;
     margin-left: 1.5rem;
   }
 }
