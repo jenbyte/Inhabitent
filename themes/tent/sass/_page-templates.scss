@@ -45,11 +45,6 @@
     }
   }
 
-  .frontpage-header {
-    background: none;
-    border-bottom: none;
-  }
-
   .site-content {
     width: auto;
   }
@@ -77,8 +72,10 @@
   }
   .page-header {
     border-bottom: $border;
-    // padding-bottom: 1rem;
     margin-bottom: 3rem;
+  }
+  .page-title {
+    margin-top: 0;
   }
 }
 
@@ -86,13 +83,8 @@
 # Front Page
 --------------------------------------*/
 .home {
-  .frontpage-header {
-    background: none;
-    border-bottom: none;
-  }
   .site-content {
     width: 100%;
-    // margin: auto;
   }
   .site-main {
     display: flex;
@@ -335,13 +327,6 @@
   }
 }
 
-.adventure-template-default {
-  .frontpage-header {
-    background: none;
-    border-bottom: none;
-  }
-}
-
 /*------------------------------------
 # Jounal Entry Blog
 --------------------------------------*/
@@ -352,7 +337,6 @@
   }
   .entry-header {
     line-height: 0;
-    // margin-top: 2.25rem;
     position: relative;
     img {
       width: 100%;
@@ -432,5 +416,24 @@
   input[type='search'],
   textarea {
     text-transform: none;
+  }
+}
+
+/*--------------------------------------
+# Search Results
+----------------------------------------*/
+.no-results,
+.search-results {
+  .entry-title a {
+    font-family: $font__header-bold;
+    font-size: 2rem;
+  }
+  .search-field {
+    background: $color__bg-input;
+    border: $border;
+    color: #404040;
+    height: auto;
+    text-transform: none;
+    width: 200px;
   }
 }

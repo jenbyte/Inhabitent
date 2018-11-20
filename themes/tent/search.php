@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="archive-area content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -20,7 +20,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
+				<a class="black-btn" href="<?php echo get_the_permalink(); ?>">
+						Read More →
+					</a>
 			<?php endwhile; ?>
 
 			<?php red_starter_numbered_pagination(); ?>

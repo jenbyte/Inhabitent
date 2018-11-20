@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .widget {
-  margin: 0 0 $base__space-unit;
+  margin: 0 0 3rem;
   /* Make sure select elements fit in widgets. */
   select {
     max-width: 100%;
@@ -20,9 +20,6 @@
     background: transparent;
     border: none;
     color: $color__link;
-  }
-  input[type='email'] {
-    border: none;
   }
 }
 /* Sidebar */
@@ -43,6 +40,7 @@ ul {
 
 .contact-meta {
   display: flex;
+  align-items: center;
   a {
     @include link();
   }

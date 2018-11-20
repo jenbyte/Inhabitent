@@ -38,12 +38,20 @@ a {
   }
 }
 
-.site-header {
-  padding: 0.5rem 0;
-  padding-top: 0.75rem;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.page-template-about,
+.adventure-template-default,
+.home {
+  .frontpage-header {
+    background: none;
+    border-bottom: none;
+  }
+  .site-header {
+    margin: 1rem 0;
+    // padding-top: 0.75rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .top-header {
