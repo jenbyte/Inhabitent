@@ -20,7 +20,7 @@ Inhabitent Site is a multi-page website for a Inhabitent Camping Supply Co. Its 
 
 ## **Installation**
 
-Inhabitent site requires [Node.js v4+]:https://nodejs.org/en/ to run.
+Inhabitent site requires [Node.js v4+][1] to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -29,6 +29,8 @@ $ cd wp-content/themes/inhabitent
 $ npm install -d
 $ gulp
 ```
+
+[1]: https://nodejs.org/en/
 
 ## **Wordpress Plugins**
 

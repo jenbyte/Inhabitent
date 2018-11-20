@@ -98,13 +98,12 @@ iframe {
 .comment-list {
   margin-left: 0;
   padding-left: 0;
-  border-top: none;
+  border-bottom: $border;
   .children {
     border-top: $border;
-    border-bottom: $border;
   }
   ul li {
-    // border-top: $border;
+    border-top: $border;
     margin-left: 1.5rem;
   }
 }
