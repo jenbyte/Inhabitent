@@ -132,11 +132,6 @@ add_filter('excerpt_more', 'inhabitent_excerpt_more');
 
 
 /*  
-* Filter Find us title 
-*/
-
-
-/*  
 * Custom Thumbnail image for  Adventures Page 
 */
 

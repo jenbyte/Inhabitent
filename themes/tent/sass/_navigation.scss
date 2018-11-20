@@ -67,6 +67,9 @@ a {
 
 .top-header {
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: center;
 }
 
@@ -85,9 +88,11 @@ a {
 .main-navigation {
   clear: both;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
-  // position: fixed;
   margin: auto;
   width: 1120px;
   z-index: 5;
@@ -96,6 +101,9 @@ a {
   }
   .nav-menu {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
   }
   ul {
     display: none;
@@ -164,7 +172,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  // position: absolute;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5;
@@ -193,6 +200,9 @@ a {
 
 .top-menu {
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   align-items: center;
 }
 
