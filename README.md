@@ -4,17 +4,11 @@ Inhabitent Site is a multi-page website for a Inhabitent Camping Supply Co. Its 
 
 ## **Technologies Used**
 
-- PHP
-- jQuery
-- HTML
-- CSS/SCSS
-- gulp
-- CLI
-- Wordpress CMS
+PHP, jQuery, HTML, CSS/SCSS, gulp, CLI, Wordpress CMS
 
 ## **Personal Learnings**
 
-- How to create a WordPress theme from scratch
+- How to create a WordPress theme
 - Understanding the WP Template Hierarchy
 - Using PHP to modify content in WordPress
 

@@ -1,9 +1,6 @@
 (function($) {
   $('.icon-search').on('click', function(event) {
     event.preventDefault();
-    // $('.search-field').toggle(1000);
-    // $('.search-field').focus();
-
     $('.search-field').addClass('show');
     $('.search-field').focus();
   });
