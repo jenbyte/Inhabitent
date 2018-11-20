@@ -680,6 +680,7 @@ a {
 
 /* Site-Header */
 .frontpage-header {
+  background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1; }
   .frontpage-header a {
     color: #fff;
@@ -690,7 +691,10 @@ a {
     text-transform: uppercase; }
 
 .site-header {
+  padding: 0.5rem 0;
+  padding-top: 0.75rem;
   position: absolute;
+  top: 0;
   width: 100%; }
 
 .top-header {
@@ -1177,6 +1181,7 @@ object {
     font-size: 2rem; }
 
 .page-template-about .frontpage-header {
+  background: none;
   border-bottom: none; }
 
 .page-template-about .site-content {
@@ -1186,6 +1191,7 @@ object {
 # Front Page
 --------------------------------------*/
 .home .frontpage-header {
+  background: none;
   border-bottom: none; }
 
 .home .site-content {
@@ -1412,6 +1418,7 @@ object {
     width: 800px; }
 
 .adventure-template-default .frontpage-header {
+  background: none;
   border-bottom: none; }
 
 /*------------------------------------
@@ -1543,7 +1550,7 @@ object {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   width: 100%; }
   .container .product-grid {
     display: grid;

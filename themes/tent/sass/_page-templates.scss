@@ -46,6 +46,7 @@
   }
 
   .frontpage-header {
+    background: none;
     border-bottom: none;
   }
 
@@ -59,6 +60,7 @@
 --------------------------------------*/
 .home {
   .frontpage-header {
+    background: none;
     border-bottom: none;
   }
   .site-content {
@@ -308,6 +310,7 @@
 
 .adventure-template-default {
   .frontpage-header {
+    background: none;
     border-bottom: none;
   }
 }
@@ -377,13 +380,13 @@
   margin: auto;
   width: 1120px;
 }
-
 .content-area,
 .widget-area {
   padding: 3rem 0;
 }
 .content-area {
   border-right: $border;
+  // margin-top: 3rem;
   padding-right: 5%;
   width: 73%;
 }
