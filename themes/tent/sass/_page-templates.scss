@@ -54,6 +54,33 @@
     width: auto;
   }
 }
+/*------------------------------------
+# Archive
+--------------------------------------*/
+.site-content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 1120px;
+}
+.archive-area,
+.widget-area {
+  padding: 3rem 0;
+}
+.archive-area {
+  border-right: $border;
+  // margin-top: 3rem;
+  padding-right: 5%;
+  width: 73%;
+  h1 {
+    font-size: 2.4rem;
+  }
+  .page-header {
+    border-bottom: $border;
+    // padding-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+}
 
 /*------------------------------------
 # Front Page

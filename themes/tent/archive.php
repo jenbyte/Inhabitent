@@ -7,73 +7,31 @@
 
 get_header(); ?>
 
-	<div id="primary" class="product-area">
+	<div id="primary" class="archive-area">
 		<main id="main" class="site-main" role="main">
-<div class="container">
+<!-- <div class="container"> -->
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
-
-		<div class="archive-links">
-			<?php 
-			$terms = get_terms(array(
-				'taxonomy' => 'product_type',
-				'hide_empty' => 0, 
-			));
-			foreach($terms as $term): ?>
-					<p><a class="product-link" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
-
-			<?php endforeach; ?>
-		</div><!-- .archive-links -->
-
-
-		<!--  TODO product Grid -->
-		<section class="product-grid">
-			
 			<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="product-grid-item">	
-					<a href="<?= get_permalink() ; ?>">
-						<div class="thumbnail-wrapper">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
-							<?php else : ?>
-								<?php echo the_title( '<h2 class="product-title">', '</h2>' ); ?>
-							<?php endif; ?>
-						</div>  <!-- .thumbnail-wrapper -->
-					</a>
-					<div class="product-info">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content' ); ?>
+			<?php endwhile; ?>
+				<?php the_posts_navigation(); ?>
 
-						<?php the_title( '<h2 class="product-title">', '</h2>' ); ?>
-						<div class="dots"></div>
-						<div class="product-price">
-							<?php $price = CFS()->get( 'price' );  ?>
-							<?= "$$price"; ?>
-						</div> <!-- .entry-price -->
+			<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			
+		<?php endif; ?>
+	
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-					</div>	<!-- .product-info-->
-					</div><!-- .product-grid-item-->
-						<?php endwhile; ?>
-					
-						<?php else : ?>
-
-						<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-						<?php endif; ?>
-				
-			</section>
-
-
-
-
-		</div><!-- .container -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
