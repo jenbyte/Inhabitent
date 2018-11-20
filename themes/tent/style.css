@@ -1107,15 +1107,16 @@ iframe {
   display: flex;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
-  .comment-body:last-child {
-    border-bottom: 1px solid #e1e1e1; }
 
 .comment-list {
   margin-left: 0;
   padding-left: 0;
   border-top: none; }
-  .comment-list li {
-    border-top: 1px solid #e1e1e1; }
+  .comment-list .children {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1; }
+  .comment-list ul li {
+    margin-left: 1.5rem; }
 
 .comment-metadata {
   color: grey; }

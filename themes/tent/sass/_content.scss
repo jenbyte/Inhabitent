@@ -55,8 +55,6 @@ iframe {
 .comment-form textarea,
 .comment-form input[type='text'] {
   background: $color__bg-input;
-  //   border-bottom: $border;
-  //   padding-bottom: 1.5rem;
 }
 
 .comment-content a {
@@ -89,9 +87,9 @@ iframe {
   display: flex;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  &:last-child {
-    border-bottom: $border;
-  }
+  // &:last-child {
+  //   border-bottom: $border;
+  // }
   //   li {
   //     border-bottom: none;
   //   }
@@ -101,8 +99,13 @@ iframe {
   margin-left: 0;
   padding-left: 0;
   border-top: none;
-  li {
+  .children {
     border-top: $border;
+    border-bottom: $border;
+  }
+  ul li {
+    // border-top: $border;
+    margin-left: 1.5rem;
   }
 }
 .comment-metadata {
