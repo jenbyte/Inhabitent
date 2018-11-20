@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="archive-area">
 		<main id="main" class="site-main" role="main">
-<!-- <div class="container"> -->
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -19,7 +19,6 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content' ); ?>
 			<?php endwhile; ?>

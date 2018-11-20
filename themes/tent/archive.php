@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="archive-area">
 		<main id="main" class="site-main" role="main">
-<!-- <div class="container"> -->
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
