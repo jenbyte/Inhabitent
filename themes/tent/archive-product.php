@@ -35,7 +35,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div class="product-grid-item">	
 
-					<a href="<?= get_permalink() ; ?>">
+					<a href="<?php echo get_permalink() ; ?>">
 						<div class="thumbnail-wrapper">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail( 'large' ); ?>
@@ -50,7 +50,7 @@ get_header(); ?>
 						<div class="dots"></div>
 						<div class="product-price">
 							<?php $price = CFS()->get( 'price' );  ?>
-							<?= "$$price"; ?>
+							<?php echo "$$price"; ?>
 						</div> <!-- .entry-price -->
 					</div>	<!-- .product-info-->
 

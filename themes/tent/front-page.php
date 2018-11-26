@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="front-content-area">
 		<main id="main" class="site-main" role="main">
 
-<section class="home-header">
+<section class="entry-header">
 	<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'?>"
 	class="logo" alt="Inhabitent full logo" />
 </section>
@@ -111,7 +111,7 @@ get_header(); ?>
 			<?php endforeach; wp_reset_postdata(); ?>
 		</div><!-- .stories-container  -->
 		
-		<a class="brand-btn" href="<?php echo get_the_permalink(); ?>">
+		<a class="brand-btn" href="<?php echo get_post_type_archive_link( 'adventure' ); ?>"> 
 			more adventures
 		</a>
 	</section>

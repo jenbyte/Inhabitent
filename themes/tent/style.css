@@ -721,32 +721,19 @@ a {
 .frontpage-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1; }
-  .frontpage-header a {
-    color: #fff;
-    display: block;
-    font-family: "novecento";
-    padding: 0 1rem;
-    text-decoration: none;
-    text-transform: uppercase; }
 
 .site-header {
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10; }
 
-.page-template-about .frontpage-header,
-.adventure-template-default .frontpage-header,
-.home .frontpage-header {
-  background: none;
-  border-bottom: none; }
-
 .page-template-about .site-header,
 .adventure-template-default .site-header,
 .home .site-header {
-  margin: 1rem 0;
-  position: absolute;
+  margin: 0.5rem 0;
+  position: fixed;
   top: 0;
   width: 100%; }
 
@@ -769,7 +756,8 @@ a {
   border-bottom: 1px solid #e1e1e1;
   color: #248a83;
   padding: 0.5rem 0;
-  position: fixed; }
+  position: fixed;
+  width: 100%; }
 
 /* Menus */
 .icon-search {
@@ -777,9 +765,9 @@ a {
 
 .main-navigation {
   clear: both;
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -787,8 +775,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  padding-top: 30px;
   width: 1120px;
   z-index: 5; }
+  .main-navigation a {
+    color: #fff;
+    display: block;
+    font-family: "novecento";
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase; }
   .main-navigation a {
     color: #fff; }
   .main-navigation .nav-menu {
@@ -823,6 +819,7 @@ a {
     position: relative; }
 
 .reverse-header {
+  background: none;
   background-color: transparent;
   border-bottom: 0;
   color: #f0e4d1;
@@ -836,9 +833,17 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  padding-top: 32px;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5; }
+  .reverse-header a {
+    color: #fff;
+    display: block;
+    font-family: "novecento";
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase; }
   .reverse-header .icon-search {
     text-shadow: 1px 1px 2px #323232; }
     .reverse-header .icon-search:hover {
@@ -870,10 +875,6 @@ a {
           align-items: center; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
@@ -1280,8 +1281,6 @@ object {
   .archive-area .page-header {
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 3rem; }
-  .archive-area .page-title {
-    margin-top: 0; }
 
 /*------------------------------------
 # Front Page
@@ -1300,6 +1299,19 @@ object {
   margin: auto;
   max-width: 1120px; }
 
+.home .entry-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+
 .front-content-area {
   width: 100%;
   margin-bottom: 2rem;
@@ -1317,19 +1329,6 @@ object {
 .menu-item-home a {
   color: #fff;
   border-bottom: none; }
-
-.home-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  width: 100vw; }
 
 .logo {
   -ms-flex-item-align: center;

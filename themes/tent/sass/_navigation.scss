@@ -29,17 +29,17 @@ a {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: $border;
   // position: fixed;
-  a {
-    color: $font-light;
-    display: block;
-    font-family: $font__header;
-    padding: 0 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+  // a {
+  //   color: $font-light;
+  //   display: block;
+  //   font-family: $font__header;
+  //   padding: 0 1rem;
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  // }
 }
 .site-header {
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -49,13 +49,9 @@ a {
 .page-template-about,
 .adventure-template-default,
 .home {
-  .frontpage-header {
-    background: none;
-    border-bottom: none;
-  }
   .site-header {
-    margin: 1rem 0;
-    position: absolute;
+    margin: 0.5rem 0;
+    position: fixed;
     top: 0;
     width: 100%;
   }
@@ -78,7 +74,9 @@ a {
   border-bottom: $border;
   color: $color__link;
   padding: 0.5rem 0;
+
   position: fixed;
+  width: 100%;
 }
 
 /* Menus */
@@ -88,14 +86,20 @@ a {
 .main-navigation {
   clear: both;
   display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding-top: 30px;
   width: 1120px;
   z-index: 5;
+  a {
+    color: $font-light;
+    display: block;
+    font-family: $font__header;
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
   a {
     color: $font-light;
   }
@@ -165,6 +169,7 @@ a {
 }
 
 .reverse-header {
+  background: none;
   background-color: transparent;
   border-bottom: 0;
   color: $hover-light;
@@ -172,15 +177,27 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding-top: 32px;
   text-shadow: 1px 1px 2px #323232;
   width: 1120px;
   z-index: 5;
+
+  a {
+    color: $font-light;
+    display: block;
+    font-family: $font__header;
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
   .icon-search {
     text-shadow: 1px 1px 2px #323232;
     &:hover {
       color: $hover-light;
     }
   }
+
   .menu,
   .nav-menu {
     display: flex;
@@ -193,6 +210,7 @@ a {
       }
     }
   }
+
   span {
     color: white;
   }
@@ -209,7 +227,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
+  // display: block;
 }
 
 @media screen and (min-width: 768px) {

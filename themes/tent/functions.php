@@ -1,6 +1,6 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Inhabitent Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -90,8 +90,8 @@ function red_starter_scripts() {
 	wp_enqueue_script('jquery'); 
 
 
-	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'inhabitent-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 //added this line to include custom.js file. the empty quotes '' is for the date. leave blank for now so the code can run true
 	wp_enqueue_script( 'inhabitent-custom-js', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '', true );
@@ -113,7 +113,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-// Remove "Editor" links from sub-menus
+// Remove "Editor" link from sub-menus
 function inhabitent_remove_submenus() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );

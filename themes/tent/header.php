@@ -26,7 +26,6 @@
 				<div class="site-branding">
 
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
 				</div><!-- .site-branding -->
 
@@ -34,9 +33,13 @@
 						<?php if(is_page_template( 'about.php' ) || is_front_page() || is_singular( array('adventure' ))  ) : ?>
 
 							<nav id="site-navigation" class="reverse-header" role="navigation">
-								<a href="<?php echo get_bloginfo( 'url' ); ?>">
-									<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
-									class="tent-logo" alt="Inhabitent tent logo" />
+								<a href="<?php echo home_url(); ?>">
+
+								
+										<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
+										class="tent-logo" alt="Inhabitent tent logo" />
+
+
 								</a>
 								<div class="top-menu">
 									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>					
@@ -48,7 +51,7 @@
 
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								
-								<a href="<?php echo get_bloginfo( 'url' ); ?>">
+								<a href="<?php echo home_url(); ?>">
 									<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
 									class="tent-logo" alt="Inhabitent tent logo" />
 								</a>

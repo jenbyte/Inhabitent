@@ -34,7 +34,7 @@
 			</div>
 			<div class="footer-block-item">
 				<div class="text-logo">
-					<a href="<?php echo get_bloginfo( 'url' ); ?>">
+					<a href="<?php echo home_url(); ?>">
 					<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-text.svg" alt='Inhabitent Logo'></a>
 				</div>
 			</div>

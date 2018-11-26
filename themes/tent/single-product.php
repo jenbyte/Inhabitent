@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<div class="product-price">
 				<?php $price = CFS()->get( 'price' );  ?>
-				<?= "$$price"; ?>
+				<?php echo "$$price"; ?>
 			</div> <!-- .entry-price -->
 
 			<div class="entry-content">
