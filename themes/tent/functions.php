@@ -119,3 +119,21 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+
+// Add class to body
+// function wp_body_classes( $classes ) {
+//     if ( is_page_template( 'archive-adventure.php' ) ) {
+//         $classes[] = 'archive-adventure';
+//     }
+//     return $classes;
+// }
+// add_filter( 'body_class', 'custom_class' );
+
+
+function wp_body_classes( $classes ) {
+    $classes[] = 'archive-adventure';
+      
+    return $classes;
+}
+add_filter( 'body_class','wp_body_classes' );

@@ -98,10 +98,14 @@
 /*--------------------------------------
   # Adventures - Archive
   ----------------------------------------*/
-.archive-area {
-  padding: 3rem 0;
-  .site-main {
-    margin-bottom: 3rem;
+.archive-adventure {
+  .archive-area {
+    padding: 3rem 0;
+    padding-right: 0;
+    border: 0;
+    .site-main {
+      margin-bottom: 3rem;
+    }
   }
 }
 .post-type-archive-adventure {

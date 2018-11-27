@@ -39,9 +39,9 @@
   display: none;
 }
 
-span .days-of-week {
-  font-family: $font__header-bold;
-  font-weight: 700;
+.days-of-week {
+  font-family: $font__main-bold;
+  // font-weight: 700;
 }
 
 /* Map */

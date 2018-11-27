@@ -25,18 +25,6 @@ a {
 }
 
 /* Site-Header */
-.frontpage-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: $border;
-}
-.site-header {
-  margin-bottom: 0.5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
 .page-template-about,
 .adventure-template-default,
 .home {
@@ -52,6 +40,19 @@ a {
   }
 }
 
+.frontpage-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: $border;
+}
+
+.site-header {
+  margin-bottom: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 .top-header {
   display: flex;
   display: -webkit-box;
@@ -62,12 +63,73 @@ a {
 
 .fixed-header {
   background-color: rgba(255, 255, 255, 0.85);
+
   border-bottom: $border;
   color: $color__link;
   padding: 0.5rem 0;
-
   position: fixed;
   width: 100%;
+  .site-logo {
+    background: url(../../images/inhabitent-logo-tent.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    text-align: left;
+  }
+}
+.reverse-header {
+  background: none;
+  background-color: transparent;
+  border-bottom: 0;
+  color: $hover-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 32px;
+  text-shadow: 1px 1px 2px #323232;
+  width: 1120px;
+  z-index: 5;
+
+  a {
+    color: $font-light;
+    display: block;
+    font-family: $font__header;
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: white;
+  }
+
+  .icon-search {
+    text-shadow: 1px 1px 2px #323232;
+    &:hover {
+      color: $hover-light;
+    }
+  }
+
+  .menu,
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    li a {
+      color: $font-light;
+      &:hover {
+        color: $hover-light;
+      }
+    }
+  }
+
+  .site-logo {
+    background: url(../../images/inhabitent-logo-tent-white.svg) center/50px
+      no-repeat;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    text-align: left;
+  }
 }
 
 /* Menus */
@@ -156,54 +218,6 @@ a {
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-  }
-}
-
-.reverse-header {
-  background: none;
-  background-color: transparent;
-  border-bottom: 0;
-  color: $hover-light;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding-top: 32px;
-  text-shadow: 1px 1px 2px #323232;
-  width: 1120px;
-  z-index: 5;
-
-  a {
-    color: $font-light;
-    display: block;
-    font-family: $font__header;
-    padding: 0 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .icon-search {
-    text-shadow: 1px 1px 2px #323232;
-    &:hover {
-      color: $hover-light;
-    }
-  }
-
-  .menu,
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    li a {
-      color: $font-light;
-      &:hover {
-        color: $hover-light;
-      }
-    }
-  }
-
-  span {
-    color: white;
   }
 }
 

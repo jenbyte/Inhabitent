@@ -27,9 +27,9 @@
 			<div class="footer-block-item">
 				<div class="hours">
 					<h3>business hours</h3>
-				<p><span class="days-of-week">Monday-Friday:</span> 9am to 5pm</p>
-				<p><span class="days-of-week">Saturday:</span> 10am to 2pm</p>
-				<p><span class="days-of-week">Sunday:</span> Closed</p>
+				<p><strong>Monday-Friday:</strong> 9am to 5pm</p>
+				<p><strong>Saturday:</strong> 10am to 2pm</p>
+				<p><strong>Sunday:</strong> Closed</p>
 				</div>
 			</div>
 			<div class="footer-block-item">
