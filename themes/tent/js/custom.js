@@ -30,14 +30,11 @@
           console.log('working!');
 
           $header.removeClass('reverse-header');
-          // $header.removeClass('tent-logo-white');
           $header.addClass('main-navigation');
           $header.parent().addClass('frontpage-header');
         } else {
           $header.parent().removeClass('frontpage-header');
           $header.removeClass('main-navigation');
-          // $header.children().removeClass('tent-logo-green');
-          // $header.addClass('tent-logo-white');
           $header.addClass('reverse-header');
         }
       });
