@@ -99,7 +99,7 @@ get_header(); ?>
 
 					<div class="story-info">
 						<div class="adv-title">
-							<a href="<?php get_the_permalink(); ?>">
+							<a href="<?php echo get_the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>
 						</div>

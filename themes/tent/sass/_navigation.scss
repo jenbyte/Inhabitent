@@ -28,15 +28,6 @@ a {
 .frontpage-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: $border;
-  // position: fixed;
-  // a {
-  //   color: $font-light;
-  //   display: block;
-  //   font-family: $font__header;
-  //   padding: 0 1rem;
-  //   text-decoration: none;
-  //   text-transform: uppercase;
-  // }
 }
 .site-header {
   margin-bottom: 0.5rem;
@@ -89,7 +80,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 35px;
   width: 1120px;
   z-index: 5;
   a {
@@ -267,8 +258,13 @@ a {
   color: $font-light;
 }
 
-.tent-logo {
+.tent-logo,
+.tent-logo-white,
+.tent-logo-green {
   display: flex;
   justify-self: center;
   width: 50px;
+}
+.tent-logo-green {
+  display: none;
 }

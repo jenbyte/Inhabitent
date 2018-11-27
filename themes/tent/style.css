@@ -775,7 +775,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 35px;
   width: 1120px;
   z-index: 5; }
   .main-navigation a {
@@ -906,12 +906,17 @@ a {
 .menu-item-home a {
   color: #fff; }
 
-.tent-logo {
+.tent-logo,
+.tent-logo-white,
+.tent-logo-green {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-self: center;
   width: 50px; }
+
+.tent-logo-green {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
