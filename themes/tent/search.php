@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -32,7 +32,7 @@ get_header(); ?>
 				</a>
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php tent_numbered_pagination(); ?>
 
 		<?php else : ?>
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<span class="author">
-					<?php red_starter_posted_by(); ?>
+					<?php tent_posted_by(); ?>
 				</span>
 				
 			</header><!-- .entry-header -->
@@ -36,7 +36,7 @@ get_header(); ?>
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer">
-				<?php red_starter_entry_footer(); ?>
+				<?php tent_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
 			
 		</article><!-- #post-## -->

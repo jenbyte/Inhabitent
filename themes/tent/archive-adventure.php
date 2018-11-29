@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 					</div>
 					<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+							<?php tent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php tent_posted_by(); ?>
 						</div><!-- .entry-meta -->
 					<?php endif; ?>
 					

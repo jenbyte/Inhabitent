@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -58,7 +58,7 @@ get_header(); ?>
 				</div>
 				<div class="post-entry">
 					<span class="front-meta">
-						<?php  red_starter_posted_on(); 
+						<?php  tent_posted_on(); 
 						echo ' / ';
 						comments_number( '0 Comments', '1 Comment', '% Comments' ); 
 						?>

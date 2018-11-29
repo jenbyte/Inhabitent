@@ -24,113 +24,6 @@ a {
   }
 }
 
-/* Site-Header */
-.page-template-about,
-.adventure-template-default,
-.home {
-  .site-header {
-    margin: 0.5rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .site-content {
-    padding-top: 0;
-    width: auto;
-  }
-}
-
-.frontpage-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: $border;
-}
-
-.site-header {
-  margin-bottom: 0.5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.top-header {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  justify-content: center;
-}
-
-.fixed-header {
-  background-color: rgba(255, 255, 255, 0.85);
-
-  border-bottom: $border;
-  color: $color__link;
-  padding: 0.5rem 0;
-  position: fixed;
-  width: 100%;
-  .site-logo {
-    background: url(../../images/inhabitent-logo-tent.svg);
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    text-align: left;
-  }
-}
-.reverse-header {
-  background: none;
-  background-color: transparent;
-  border-bottom: 0;
-  color: $hover-light;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding-top: 32px;
-  text-shadow: 1px 1px 2px #323232;
-  width: 1120px;
-  z-index: 5;
-
-  a {
-    color: $font-light;
-    display: block;
-    font-family: $font__header;
-    padding: 0 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  span {
-    color: white;
-  }
-
-  .icon-search {
-    text-shadow: 1px 1px 2px #323232;
-    &:hover {
-      color: $hover-light;
-    }
-  }
-
-  .menu,
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    li a {
-      color: $font-light;
-      &:hover {
-        color: $hover-light;
-      }
-    }
-  }
-
-  .site-logo {
-    background: url(../../images/inhabitent-logo-tent-white.svg) center/50px
-      no-repeat;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    text-align: left;
-  }
-}
 
 /* Menus */
 .icon-search {
@@ -221,13 +114,6 @@ a {
   }
 }
 
-.top-menu {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  align-items: center;
-}
 
 /* Small menu. */
 .menu-toggle,
@@ -270,15 +156,4 @@ a {
 }
 .menu-item-home a {
   color: $font-light;
-}
-
-.tent-logo,
-.tent-logo-white,
-.tent-logo-green {
-  display: flex;
-  justify-self: center;
-  width: 50px;
-}
-.tent-logo-green {
-  display: none;
 }

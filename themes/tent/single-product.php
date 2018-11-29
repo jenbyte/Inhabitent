@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -55,7 +55,7 @@ get_header(); ?>
 	</div>
 
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php tent_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
 	</article><!-- #post-## -->

@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'tent_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function red_starter_setup() {
+function tent_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -36,25 +36,25 @@ function red_starter_setup() {
 	) );
 
 }
-endif; // red_starter_setup
-add_action( 'after_setup_theme', 'red_starter_setup' );
+endif; // tent_setup
+add_action( 'after_setup_theme', 'tent_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+function tent_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'tent_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'tent_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function red_starter_widgets_init() {
+function tent_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -65,23 +65,23 @@ function red_starter_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'red_starter_widgets_init' );
+add_action( 'widgets_init', 'tent_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function tent_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'tent_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
+function tent_scripts() {
 	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
 	//added code
@@ -101,7 +101,7 @@ function red_starter_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'tent_scripts' );
 
 /**
  * Custom template tags for this theme.
@@ -122,15 +122,6 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
 
 // Add class to body
-// function wp_body_classes( $classes ) {
-//     if ( is_page_template( 'archive-adventure.php' ) ) {
-//         $classes[] = 'archive-adventure';
-//     }
-//     return $classes;
-// }
-// add_filter( 'body_class', 'custom_class' );
-
-
 function wp_body_classes( $classes ) {
     $classes[] = 'archive-adventure';
       
