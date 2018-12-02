@@ -22,11 +22,13 @@
 
     function reverseHeader() {
       const bannerHeight = $('.entry-header').height();
+      const $screen = $(window);
+
       console.log(bannerHeight);
 
-      $(window).on('scroll', function() {
+      $screen.on('scroll', function() {
         // console.log('scrolling');
-        if ($(window).scrollTop() > bannerHeight) {
+        if ($screen.scrollTop() > bannerHeight) {
           console.log('working!');
 
           $header.removeClass('reverse-header');

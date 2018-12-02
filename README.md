@@ -19,7 +19,7 @@ Inhabitent site requires [Node.js v4+][1] to run.
 Install the dependencies and devDependencies and start the server.
 
 ```
-$ cd wp-content/themes/inhabitent
+$ cd wp-content/themes/tent
 $ npm install -d
 $ gulp
 ```
