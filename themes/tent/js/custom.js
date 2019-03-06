@@ -15,7 +15,6 @@
     const $header = $('#site-navigation');
 
     if ($header.hasClass('reverse-header')) {
-      console.log('yes');
       $header.parent().removeClass('frontpage-header');
       reverseHeader();
     }
@@ -24,13 +23,8 @@
       const bannerHeight = $('.entry-header').height();
       const $screen = $(window);
 
-      console.log(bannerHeight);
-
       $screen.on('scroll', function() {
-        // console.log('scrolling');
         if ($screen.scrollTop() > bannerHeight) {
-          console.log('working!');
-
           $header.removeClass('reverse-header');
           $header.addClass('main-navigation');
           $header.parent().addClass('frontpage-header');

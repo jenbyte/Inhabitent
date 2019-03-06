@@ -24,7 +24,6 @@ a {
   }
 }
 
-
 /* Menus */
 .icon-search {
   padding: 0.25rem;
@@ -35,7 +34,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding-top: 35px;
+  // padding-top: 35px;
   width: 1120px;
   z-index: 5;
   a {
@@ -113,7 +112,6 @@ a {
   .current_page_ancestor > a {
   }
 }
-
 
 /* Small menu. */
 .menu-toggle,

@@ -717,106 +717,6 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/* Site-Header */
-.page-template-about .site-header,
-.adventure-template-default .site-header,
-.home .site-header {
-  margin: 0.5rem 0;
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-.page-template-about .site-content,
-.adventure-template-default .site-content,
-.home .site-content {
-  padding-top: 0;
-  width: auto; }
-
-.frontpage-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1; }
-
-.site-header {
-  margin-bottom: 0.5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10; }
-
-.top-header {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.fixed-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  color: #248a83;
-  padding: 0.5rem 0;
-  position: fixed;
-  width: 100%; }
-  .fixed-header .site-logo {
-    background: url(../../images/inhabitent-logo-tent.svg);
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    text-align: left; }
-
-.reverse-header {
-  background: none;
-  background-color: transparent;
-  border-bottom: 0;
-  color: #f0e4d1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  padding-top: 32px;
-  text-shadow: 1px 1px 2px #323232;
-  width: 1120px;
-  z-index: 5; }
-  .reverse-header a {
-    color: #fff;
-    display: block;
-    font-family: "novecento";
-    padding: 0 1rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .reverse-header span {
-    color: white; }
-  .reverse-header .icon-search {
-    text-shadow: 1px 1px 2px #323232; }
-    .reverse-header .icon-search:hover {
-      color: #f0e4d1; }
-  .reverse-header .menu,
-  .reverse-header .nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto; }
-    .reverse-header .menu li a,
-    .reverse-header .nav-menu li a {
-      color: #fff; }
-      .reverse-header .menu li a:hover,
-      .reverse-header .nav-menu li a:hover {
-        color: #f0e4d1; }
-  .reverse-header .site-logo {
-    background: url(../../images/inhabitent-logo-tent-white.svg) center/50px no-repeat;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    text-align: left; }
-
 /* Menus */
 .icon-search {
   padding: 0.25rem; }
@@ -833,7 +733,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  padding-top: 35px;
   width: 1120px;
   z-index: 5; }
   .main-navigation a {
@@ -876,14 +775,6 @@ a {
   .main-navigation li {
     position: relative; }
 
-.top-menu {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 /* Small menu. */
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -915,18 +806,6 @@ a {
 
 .menu-item-home a {
   color: #fff; }
-
-.tent-logo,
-.tent-logo-white,
-.tent-logo-green {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: center;
-  width: 50px; }
-
-.tent-logo-green {
-  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
